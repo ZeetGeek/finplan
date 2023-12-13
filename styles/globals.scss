@@ -1,0 +1,258 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// Import Dependency Styles
+
+// Bootstrap CSS
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+// Global CSS
+* {
+     /* Apply box-sizing and reset margin, padding, and font-family */
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: poppins;
+     transition: map-get($transition, fast);
+
+     &::before,
+     &::after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+     }
+}
+
+body,
+html {
+     /* Hide horizontal overflow */
+     overflow-x: hidden;
+}
+
+img {
+     /* Ensure images are responsive within their containers */
+     max-width: 100%;
+     height: auto;
+}
+
+a {
+     /* Remove default link styling and set color to info status color */
+     text-decoration: none;
+     color: map-get($status-colors, info);
+}
+
+ul {
+     /* Remove list styling */
+     list-style-type: none;
+}
+
+button {
+     /* Set common styles for buttons */
+     cursor: pointer;
+     background: transparent;
+     background-color: transparent;
+     outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     /* Define common styles for heading elements */
+     font-weight: map-get($Weights, bold);
+     line-height: auto;
+     margin-bottom: 0px;
+}
+
+p {
+     margin-bottom: 0px;
+     line-height: normal;
+}
+
+// Common classes
+
+// Heading classes
+@each $key, $value in $heading {
+     // Comment: Heading styles based on variables
+     .heading-#{$key} {
+          font-size: #{$value}px;
+     }
+}
+
+// Text classes
+@each $key, $value in $text {
+     // Comment: Text styles based on variables
+     .text-#{$key} {
+          font-size: #{$value}px;
+     }
+}
+
+// Font weights classes
+@each $key, $value in $Weights {
+     // Comment: Font weights based on variables
+     .weight-#{$key} {
+          font-weight: #{$value};
+     }
+}
+
+// Colors classes
+
+// Primary colors and background colors classes
+@each $key, $value in $primary-color {
+     // Comment: Primary colors and backgrounds
+     .primary-#{$key} {
+          color: #{$value};
+     }
+}
+
+@each $key, $value in $primary-color {
+     .bg-primary-#{$key} {
+          background: #{$value};
+     }
+}
+
+// Secondary colors and background colors classes
+@each $key, $value in $secondary-color {
+     // Comment: Secondary colors and backgrounds
+     .secondary-#{$key} {
+          color: #{$value};
+     }
+}
+
+@each $key, $value in $secondary-color {
+     .bg-secondary-#{$key} {
+          background: #{$value};
+     }
+}
+
+// Black and white color and background color classes
+
+// black color
+.black-color {
+     // Comment: Black color
+     color: #000;
+}
+
+.bg-black-color {
+     // Comment: Black background color
+     background: #000;
+}
+
+// white color
+.white-color {
+     // Comment: White color
+     color: #fff;
+}
+
+.bg-white-color {
+     // Comment: White background color
+     background: #fff;
+}
+
+// Gray colors and background color classes
+@each $key, $value in $gray-color {
+     // Comment: Gray colors and backgrounds
+     .gray-#{$key} {
+          color: #{$value};
+     }
+}
+
+@each $key, $value in $gray-color {
+     .bg-gray-#{$key} {
+          background: #{$value};
+     }
+}
+
+// Light blue color and background color classes
+@each $key, $value in $light-blue-color {
+     // Comment: Light blue colors and backgrounds
+     .light-blue-#{$key} {
+          color: #{$value};
+     }
+}
+
+@each $key, $value in $light-blue-color {
+     .bg-light-blue-#{$key} {
+          background: #{$value};
+     }
+}
+
+// Light blue gradient color and background color classes
+@each $key, $value in $light-blue-gradients {
+     // Comment: Light blue gradient colors and backgrounds
+     .light-blue-gradient-#{$key} {
+          color: #{$value};
+     }
+}
+
+@each $key, $value in $light-blue-gradients {
+     .bg-light-blue-gradient-#{$key} {
+          background: #{$value};
+     }
+}
+
+// Section gradient background color classes
+@each $key, $value in $section-bg-gradient-color {
+     // Comment: Section gradient background colors
+     .section-bg-#{$key} {
+          background: #{$value};
+     }
+}
+
+// Status colors and background colors
+@each $key, $value in $gray-color {
+     // Comment: Status colors and backgrounds
+     .status-#{$key} {
+          color: #{$value};
+     }
+}
+
+@each $key, $value in $status-colors {
+     .bg-status-#{$key} {
+          background: #{$value};
+     }
+}
+
+// Border radius colors classes
+
+// border all edges
+@each $key, $value in $border-radius {
+     // Comment: Border radius for all edges
+     .radius-#{$key} {
+          border-radius: #{$value};
+     }
+}
+
+// border top edges
+@each $key, $value in $border-radius {
+     .radius-top-#{$key} {
+          border-radius: #{$value} #{$value} 0px 0px;
+     }
+}
+
+// border bottom edges
+@each $key, $value in $border-radius {
+     .radius-bottom-#{$key} {
+          border-radius: 0px 0px #{$value} #{$value};
+     }
+}
+
+// Transition classes
+
+@each $key, $value in $transition {
+     // Comment: Transition classes
+     .transition-#{$key} {
+          transition: #{$value};
+     }
+}
+
+// Z index classes
+
+@each $key, $value in $z-index-levels {
+     // Comment: Z-index classes
+     .z-index-#{$key} {
+          transition: #{$value};
+     }
+}
