@@ -1,0 +1,82 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+.hero {
+     padding: 165px 0px 53px 0px;
+
+     //  hero content
+
+     .contentWrapper {
+          .description {
+               max-width: 515px;
+               margin: 12px 0px 37px 0px;
+          }
+
+          .buttonsAvatars {
+               .avatarsWrapper {
+                    margin-left: 34px;
+
+                    .avatarImages {
+                         .image {
+                              margin-left: -12px;
+                              outline: 7px solid map-get($light-blue-color, color-2);
+
+                              &:first-child {
+                                   margin-left: 0px;
+                              }
+                         }
+                    }
+
+                    .avatarContent {
+                         margin-left: 18px;
+                    }
+               }
+          }
+     }
+
+     //  hero image
+
+     .imageWrapper {
+          position: relative;
+
+          .mainImage {
+               position: relative;
+               z-index: 1;
+
+               &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: 40px;
+                    left: 0px;
+                    width: 525px;
+                    height: 525px;
+                    background: linear-gradient(white, white) padding-box,
+                         map-get($yellow-gradients, color-1) border-box;
+                    border: 74px solid transparent;
+                    border-radius: map-get($border-radius, circle);
+                    z-index: -1;
+
+                    @media (max-width: 1400px) {
+                         width: calc(525px - 50px);
+                         height: calc(525px - 50px);
+                    }
+
+                    @media (max-width: 1400px) {
+                         left: -20px;
+                    }
+               }
+          }
+
+          .arrowImage {
+               position: absolute;
+               bottom: 45px;
+               left: -310px;
+               transform: rotate(-4.48deg);
+          }
+     }
+
+     //  hero client slider
+
+     .sliderWrapper {
+     }
+}

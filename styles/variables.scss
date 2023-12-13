@@ -63,6 +63,14 @@ $light-blue-color: (
      color-2: #f5f3f5,
 );
 
+// yellow Gradient colors
+$yellow-gradients: (
+     color-1: linear-gradient(230deg, rgba(214, 227, 255, 0) 0.23%, #ffc737 0.23%, rgba(214, 227, 255, 0) 78.93%),
+     color-2: linear-gradient(284deg, #fff0e3 0.23%, rgba(214, 227, 255, 0) 98.87%),
+     color-3: linear-gradient(284deg, #fff0e3 0.23%, rgba(214, 227, 255, 0) 98.87%),
+     color-4: linear-gradient(284deg, #fff0e3 0.23%, rgba(214, 227, 255, 0) 98.87%),
+);
+
 // Light Blue Gradient Colors
 $light-blue-gradients: (
      color-1: linear-gradient(180deg, #d6e3ff 0%, rgba(255, 255, 255, 0.43) 100%),
@@ -71,8 +79,9 @@ $light-blue-gradients: (
 
 // Section Gradient Colors
 $section-bg-gradient-color: (
-     color-1: linear-gradient(284deg, #fff0e3 0.23%, rgba(214, 227, 255, 0) 98.87%),
-     color-2: linear-gradient(104deg, #fff0e3 1.29%, rgba(214, 227, 255, 0) 98.27%),
+     color-1: linear-gradient(104deg, #fff0e3 0.52%, rgba(214, 227, 255, 0) 99.03%),
+     color-2: linear-gradient(284deg, #fff0e3 0.23%, rgba(214, 227, 255, 0) 98.87%),
+     color-3: linear-gradient(104deg, #fff0e3 1.29%, rgba(214, 227, 255, 0) 98.27%),
 );
 
 // Status Colors
@@ -87,12 +96,12 @@ $status-colors: (
 
 // Border Radii
 $border-radius: (
-     very-small: 5,
-     small: 7,
-     medium: 12,
-     large: 16,
-     extra-large: 20,
-     very-large: 37,
+     very-small: 5px,
+     small: 7px,
+     medium: 12px,
+     large: 16px,
+     extra-large: 20px,
+     very-large: 37px,
      circle: 100%,
 );
 
@@ -124,8 +133,43 @@ $z-index-levels: (
 
 $breakpoint: (
      sm: 576px,
-     me: 768px,
+     md: 768px,
      lg: 992px,
      xl: 1200px,
      xxl: 1400px,
+);
+
+// Buttons
+
+// button colors
+
+$button-colors: (
+     primary: (
+          background-color: #facd00,
+          color: #000,
+          hover: lighten(#facd00, 10%),
+          box-shadow-color: lighten(#facd00, 10%),
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
+     ),
+     secondary: (
+          background-color: #4b24e7,
+          color: #fff,
+          hover: lighten(#4b24e7, 10%),
+          box-shadow-color: lighten(#4b24e7, 10%),
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
+     ),
+);
+
+// button sizes
+
+$button-sizes: (
+     small: (
+          padding: 8px 18px,
+     ),
+     medium: (
+          padding: 14px 24px,
+     ),
+     large: (
+          padding: 16px 28px,
+     ),
 );

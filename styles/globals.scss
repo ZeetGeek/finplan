@@ -27,6 +27,7 @@ body,
 html {
      /* Hide horizontal overflow */
      overflow-x: hidden;
+     background: $white-color;
 }
 
 img {
@@ -50,8 +51,8 @@ button {
      /* Set common styles for buttons */
      cursor: pointer;
      background: transparent;
-     background-color: transparent;
      outline: none;
+     border: none;
 }
 
 h1,
@@ -62,7 +63,7 @@ h5,
 h6 {
      /* Define common styles for heading elements */
      font-weight: map-get($Weights, bold);
-     line-height: auto;
+     line-height: normal;
      margin-bottom: 0px;
 }
 
@@ -135,7 +136,7 @@ p {
      color: #000;
 }
 
-.bg-black-color {
+.bg-black {
      // Comment: Black background color
      background: #000;
 }
@@ -146,7 +147,7 @@ p {
      color: #fff;
 }
 
-.bg-white-color {
+.bg-white {
      // Comment: White background color
      background: #fff;
 }
@@ -162,6 +163,14 @@ p {
 @each $key, $value in $gray-color {
      .bg-gray-#{$key} {
           background: #{$value};
+     }
+}
+
+// Yellow gradient color and background color classes
+@each $key, $value in $yellow-gradients {
+     // Comment: Yellow gradient colors and backgrounds
+     .yellow-gradient-#{$key} {
+          color: #{$value};
      }
 }
 
@@ -254,5 +263,34 @@ p {
      // Comment: Z-index classes
      .z-index-#{$key} {
           transition: #{$value};
+     }
+}
+
+// Button common classes
+
+// button color
+
+@each $button, $styles in $button-colors {
+     .button-#{$button} {
+          background-color: map-get($styles, background-color);
+          color: map-get($styles, color);
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          border-radius: map-get($border-radius, small);
+          transition: background-color map-get($transition, fast), box-shadow map-get($transition, fast) ease;
+
+          &:hover {
+               background-color: map-get($styles, hover);
+               box-shadow: 0 4px 8px rgba(map-get($styles, box-shadow-color), 0.1);
+          }
+     }
+}
+
+// button sizes
+
+@each $button, $styles in $button-sizes {
+     .button-#{$button} {
+          padding: map-get($styles, padding);
      }
 }
