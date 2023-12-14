@@ -2,84 +2,96 @@
 @import "@/styles/variables.scss";
 
 .hero {
-     padding: 165px 0px 53px 0px;
+    padding: 165px 0px 53px 0px;
 
-     //  hero content
+    //  hero content
 
-     .contentWrapper {
-          .description {
-               max-width: 515px;
-               margin: 12px 0px 37px 0px;
-          }
+    .contentWrapper {
+        .description {
+            max-width: 515px;
+            margin: 12px 0px 37px 0px;
+        }
 
-          .buttonsAvatars {
-               .avatarsWrapper {
-                    margin-left: 34px;
+        .buttonsAvatars {
+            .avatarsWrapper {
+                margin-left: 34px;
 
-                    .avatarImages {
-                         .image {
-                              margin-left: -12px;
-                              outline: 7px solid map-get($light-blue-color, color-2);
+                .avatarImages {
+                    .image {
+                        margin-left: -12px;
+                        outline: 7px solid map-get($light-blue-color, color-2);
 
-                              &:first-child {
-                                   margin-left: 0px;
-                              }
-                         }
+                        &:first-child {
+                            margin-left: 0px;
+                        }
                     }
+                }
 
-                    .avatarContent {
-                         margin-left: 18px;
-                    }
-               }
-          }
-     }
+                .avatarContent {
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
 
-     //  hero image
+    //  hero image
 
-     .imageWrapper {
-          position: relative;
+    .imageWrapper {
+        position: relative;
 
-          .mainImage {
-               position: relative;
-               z-index: 1;
+        .mainImage {
+            position: relative;
+            z-index: 1;
 
-               &::before {
-                    position: absolute;
-                    content: "";
-                    bottom: 40px;
-                    left: 0px;
-                    width: 525px;
-                    height: 525px;
-                    background: linear-gradient(white, white) padding-box,
-                         map-get($yellow-gradients, color-1) border-box;
-                    border: 74px solid transparent;
-                    border-radius: map-get($border-radius, circle);
-                    z-index: -1;
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: 40px;
+                left: 0px;
+                width: 525px;
+                height: 525px;
+                background: linear-gradient(white, white) padding-box,
+                    map-get($yellow-gradients, color-1) border-box;
+                border: 74px solid transparent;
+                border-radius: map-get($border-radius, circle);
+                z-index: -1;
 
-                    @media (max-width: 1400px) {
-                         width: calc(525px - 50px);
-                         height: calc(525px - 50px);
-                    }
+                @media (max-width: 1400px) {
+                    width: calc(525px - 50px);
+                    height: calc(525px - 50px);
+                }
 
-                    @media (max-width: 1400px) {
-                         left: -20px;
-                    }
-               }
-          }
+                @media (max-width: 1400px) {
+                    left: -20px;
+                }
+            }
+        }
 
-          .arrowImage {
-               position: absolute;
-               bottom: 45px;
-               left: -310px;
-               transform: rotate(-4.48deg);
-          }
-     }
+        .arrowImage {
+            position: absolute;
+            bottom: 45px;
+            left: -310px;
+            transform: rotate(-4.48deg);
+        }
+    }
 
-     //  hero client slider
-     .sliderWrapper {
-          padding: 55px 50px;
-          .sliderText {
-               margin-bottom: 15px;
-          }
-     }
+    //  hero client slider
+    .sliderWrapper {
+        position: relative;
+        padding: 55px 50px;
+        margin-top: -25px;
+        z-index: 1;
+
+        //  mask shape
+        -webkit-mask-image: url("../../../public/images/sections/hero/shapes/rectangle.png");
+        mask-image: url("../../../public/images/sections/hero/shapes/rectangle.png");
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+
+        .sliderText {
+            margin-bottom: 15px;
+        }
+    }
 }
