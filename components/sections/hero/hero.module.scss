@@ -76,7 +76,10 @@
      }
 
      //  hero client slider
-
      .sliderWrapper {
+          padding: 55px 50px;
+          .sliderText {
+               margin-bottom: 15px;
+          }
      }
 }

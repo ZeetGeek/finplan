@@ -1,5 +1,6 @@
 {
      "docify.commentService.docstringFormat": "JavaDoc",
      "docify.translateService.docstringFormat": "JavaDoc",
-     "docify.translateService.programmingLanguage": "auto-detect"
+     "docify.translateService.programmingLanguage": "auto-detect",
+     "cSpell.words": ["Swiper"]
 }

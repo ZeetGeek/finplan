@@ -1,6 +1,9 @@
+"use client";
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
 
 // Define reusable components
 
@@ -9,7 +12,7 @@ import heroImage from "@/images/sections/hero/1.png";
 import arrowImage from "@/images/sections/hero/shapes/1.png";
 
 // Fetch or import data required for the page
-import { avatarsData as data } from "@/data/hero";
+import { avatarsData, clientData } from "@/data/hero";
 
 // Apply styles or link external stylesheets
 import style from "./hero.module.scss";
@@ -46,7 +49,7 @@ export const Hero = () => {
                                              </div>
                                              <div className={`${style.avatarsWrapper} d-flex align-items-center`}>
                                                   <div className={`${style.avatarImages}`}>
-                                                       {data.map((image) => (
+                                                       {avatarsData.map((image) => (
                                                             <Image
                                                                  key={image.id}
                                                                  src={image.src}
@@ -83,9 +86,42 @@ export const Hero = () => {
                                         </div>
                                    </div>
                               </Col>
-                              {/* hero client slider */}
+                              {/* hero clients slider */}
                               <Col lg={12}>
-                                   <div className={`${style.sliderWrapper}`}></div>
+                                   <div className={`${style.sliderWrapper} bg-secondary-normal radius-large`}>
+                                        <div className={`${style.sliderText}`}>
+                                             {/* slider text */}
+                                             <span className="white-color text-very-large weight-semibold">
+                                                  We have worked with 120+ clients :
+                                             </span>
+                                        </div>
+                                        <div className={`${style.clientImages}`}>
+                                             {/* client images */}
+                                             <Swiper
+                                                  slidesPerView={6}
+                                                  spaceBetween={50}
+                                                  autoplay={{
+                                                       delay: 1500,
+                                                       disableOnInteraction: false,
+                                                  }}
+                                                  freeMode={true}
+                                                  loop={true}
+                                                  modules={[Autoplay, Pagination, Navigation, FreeMode]}
+                                                  className="mySwiper"
+                                             >
+                                                  {clientData.map((image) => (
+                                                       <SwiperSlide key={image.id}>
+                                                            <Image
+                                                                 src={image.src}
+                                                                 height={image.height}
+                                                                 width={image.width}
+                                                                 alt={image.alt}
+                                                            />
+                                                       </SwiperSlide>
+                                                  ))}
+                                             </Swiper>
+                                        </div>
+                                   </div>
                               </Col>
                          </Row>
                     </Container>
