@@ -11,51 +11,51 @@
 
 // Global CSS
 * {
-     /* Apply box-sizing and reset margin, padding, and font-family */
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
-     font-family: poppins;
-     transition: map-get($transition, fast);
+    /* Apply box-sizing and reset margin, padding, and font-family */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    transition: map-get($transition, fast);
 
-     &::before,
-     &::after {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-     }
+    &::before,
+    &::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 body,
 html {
-     /* Hide horizontal overflow */
-     overflow-x: hidden;
-     background: $white-color;
+    /* Hide horizontal overflow */
+    overflow-x: hidden;
+    background: $white-color;
 }
 
 img {
-     /* Ensure images are responsive within their containers */
-     max-width: 100%;
-     height: auto;
+    /* Ensure images are responsive within their containers */
+    max-width: 100%;
+    height: auto;
 }
 
 a {
-     /* Remove default link styling and set color to info status color */
-     text-decoration: none;
-     color: map-get($status-colors, info);
+    /* Remove default link styling and set color to info status color */
+    text-decoration: none;
+    color: map-get($status-colors, info);
 }
 
 ul {
-     /* Remove list styling */
-     list-style-type: none;
+    /* Remove list styling */
+    list-style-type: none;
 }
 
 button {
-     /* Set common styles for buttons */
-     cursor: pointer;
-     background: transparent;
-     outline: none;
-     border: none;
+    /* Set common styles for buttons */
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
 }
 
 h1,
@@ -64,209 +64,217 @@ h3,
 h4,
 h5,
 h6 {
-     /* Define common styles for heading elements */
-     font-weight: map-get($Weights, bold);
-     line-height: normal;
-     margin-bottom: 0px;
+    /* Define common styles for heading elements */
+    font-weight: map-get($Weights, bold);
+    line-height: normal;
+    margin-bottom: 0px;
 }
 
 p {
-     margin-bottom: 0px;
-     line-height: normal;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+// Background mask size and mask repeat common class
+.bg-mask {
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 // Common classes
 
 // Heading classes
 @each $key, $value in $heading {
-     // Comment: Heading styles based on variables
-     .heading-#{$key} {
-          font-size: #{$value}px;
-     }
+    // Comment: Heading styles based on variables
+    .heading-#{$key} {
+        font-size: #{$value}px;
+    }
 }
 
 // Text classes
 @each $key, $value in $text {
-     // Comment: Text styles based on variables
-     .text-#{$key} {
-          font-size: #{$value}px;
-     }
+    // Comment: Text styles based on variables
+    .text-#{$key} {
+        font-size: #{$value}px;
+    }
 }
 
 // Font weights classes
 @each $key, $value in $Weights {
-     // Comment: Font weights based on variables
-     .weight-#{$key} {
-          font-weight: #{$value};
-     }
+    // Comment: Font weights based on variables
+    .weight-#{$key} {
+        font-weight: #{$value};
+    }
 }
 
 // Colors classes
 
 // Primary colors and background colors classes
 @each $key, $value in $primary-color {
-     // Comment: Primary colors and backgrounds
-     .primary-#{$key} {
-          color: #{$value};
-     }
+    // Comment: Primary colors and backgrounds
+    .primary-#{$key} {
+        color: #{$value};
+    }
 }
 
 @each $key, $value in $primary-color {
-     .bg-primary-#{$key} {
-          background: #{$value};
-     }
+    .bg-primary-#{$key} {
+        background: #{$value};
+    }
 }
 
 // Secondary colors and background colors classes
 @each $key, $value in $secondary-color {
-     // Comment: Secondary colors and backgrounds
-     .secondary-#{$key} {
-          color: #{$value};
-     }
+    // Comment: Secondary colors and backgrounds
+    .secondary-#{$key} {
+        color: #{$value};
+    }
 }
 
 @each $key, $value in $secondary-color {
-     .bg-secondary-#{$key} {
-          background: #{$value};
-     }
+    .bg-secondary-#{$key} {
+        background: #{$value};
+    }
 }
 
 // Black and white color and background color classes
 
 // black color
 .black-color {
-     // Comment: Black color
-     color: #000;
+    // Comment: Black color
+    color: #000;
 }
 
 .bg-black {
-     // Comment: Black background color
-     background: #000;
+    // Comment: Black background color
+    background: #000;
 }
 
 // white color
 .white-color {
-     // Comment: White color
-     color: #fff;
+    // Comment: White color
+    color: #fff;
 }
 
 .bg-white {
-     // Comment: White background color
-     background: #fff;
+    // Comment: White background color
+    background: #fff;
 }
 
 // Gray colors and background color classes
 @each $key, $value in $gray-color {
-     // Comment: Gray colors and backgrounds
-     .gray-#{$key} {
-          color: #{$value};
-     }
+    // Comment: Gray colors and backgrounds
+    .gray-#{$key} {
+        color: #{$value};
+    }
 }
 
 @each $key, $value in $gray-color {
-     .bg-gray-#{$key} {
-          background: #{$value};
-     }
+    .bg-gray-#{$key} {
+        background: #{$value};
+    }
 }
 
 // Yellow gradient color and background color classes
 @each $key, $value in $yellow-gradients {
-     // Comment: Yellow gradient colors and backgrounds
-     .yellow-gradient-#{$key} {
-          color: #{$value};
-     }
+    // Comment: Yellow gradient colors and backgrounds
+    .yellow-gradient-#{$key} {
+        color: #{$value};
+    }
 }
 
 // Light blue color and background color classes
 @each $key, $value in $light-blue-color {
-     // Comment: Light blue colors and backgrounds
-     .light-blue-#{$key} {
-          color: #{$value};
-     }
+    // Comment: Light blue colors and backgrounds
+    .light-blue-#{$key} {
+        color: #{$value};
+    }
 }
 
 @each $key, $value in $light-blue-color {
-     .bg-light-blue-#{$key} {
-          background: #{$value};
-     }
+    .bg-light-blue-#{$key} {
+        background: #{$value};
+    }
 }
 
 // Light blue gradient color and background color classes
 @each $key, $value in $light-blue-gradients {
-     // Comment: Light blue gradient colors and backgrounds
-     .light-blue-gradient-#{$key} {
-          color: #{$value};
-     }
+    // Comment: Light blue gradient colors and backgrounds
+    .light-blue-gradient-#{$key} {
+        color: #{$value};
+    }
 }
 
 @each $key, $value in $light-blue-gradients {
-     .bg-light-blue-gradient-#{$key} {
-          background: #{$value};
-     }
+    .bg-light-blue-gradient-#{$key} {
+        background: #{$value};
+    }
 }
 
 // Section gradient background color classes
 @each $key, $value in $section-bg-gradient-color {
-     // Comment: Section gradient background colors
-     .section-bg-#{$key} {
-          background: #{$value};
-     }
+    // Comment: Section gradient background colors
+    .section-bg-#{$key} {
+        background: #{$value};
+    }
 }
 
 // Status colors and background colors
 @each $key, $value in $gray-color {
-     // Comment: Status colors and backgrounds
-     .status-#{$key} {
-          color: #{$value};
-     }
+    // Comment: Status colors and backgrounds
+    .status-#{$key} {
+        color: #{$value};
+    }
 }
 
 @each $key, $value in $status-colors {
-     .bg-status-#{$key} {
-          background: #{$value};
-     }
+    .bg-status-#{$key} {
+        background: #{$value};
+    }
 }
 
 // Border radius colors classes
 
 // border all edges
 @each $key, $value in $border-radius {
-     // Comment: Border radius for all edges
-     .radius-#{$key} {
-          border-radius: #{$value};
-     }
+    // Comment: Border radius for all edges
+    .radius-#{$key} {
+        border-radius: #{$value};
+    }
 }
 
 // border top edges
 @each $key, $value in $border-radius {
-     .radius-top-#{$key} {
-          border-radius: #{$value} #{$value} 0px 0px;
-     }
+    .radius-top-#{$key} {
+        border-radius: #{$value} #{$value} 0px 0px;
+    }
 }
 
 // border bottom edges
 @each $key, $value in $border-radius {
-     .radius-bottom-#{$key} {
-          border-radius: 0px 0px #{$value} #{$value};
-     }
+    .radius-bottom-#{$key} {
+        border-radius: 0px 0px #{$value} #{$value};
+    }
 }
 
 // Transition classes
 
 @each $key, $value in $transition {
-     // Comment: Transition classes
-     .transition-#{$key} {
-          transition: #{$value};
-     }
+    // Comment: Transition classes
+    .transition-#{$key} {
+        transition: #{$value};
+    }
 }
 
 // Z index classes
 
 @each $key, $value in $z-index-levels {
-     // Comment: Z-index classes
-     .z-index-#{$key} {
-          transition: #{$value};
-     }
+    // Comment: Z-index classes
+    .z-index-#{$key} {
+        transition: #{$value};
+    }
 }
 
 // Button common classes
@@ -274,26 +282,39 @@ p {
 // button color
 
 @each $button, $styles in $button-colors {
-     .button-#{$button} {
-          background-color: map-get($styles, background-color);
-          color: map-get($styles, color);
-          padding: 10px 20px;
-          border: none;
-          cursor: pointer;
-          border-radius: map-get($border-radius, small);
-          transition: background-color map-get($transition, fast), box-shadow map-get($transition, fast) ease;
+    .button-#{$button} {
+        background-color: map-get($styles, background-color);
+        color: map-get($styles, color);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: map-get($border-radius, small);
+        transition: background-color map-get($transition, fast),
+            box-shadow map-get($transition, fast) ease;
 
-          &:hover {
-               background-color: map-get($styles, hover);
-               box-shadow: 0 4px 8px rgba(map-get($styles, box-shadow-color), 0.1);
-          }
-     }
+        &:hover {
+            background-color: map-get($styles, hover);
+            box-shadow: 0 4px 8px rgba(map-get($styles, box-shadow-color), 0.1);
+        }
+    }
 }
 
 // button sizes
 
 @each $button, $styles in $button-sizes {
-     .button-#{$button} {
-          padding: map-get($styles, padding);
-     }
+    .button-#{$button} {
+        padding: map-get($styles, padding);
+    }
+}
+
+// section global css
+
+// feature section
+
+.features_gl {
+    .all_features_gl {
+        .row {
+            --bs-gutter-x: 111px;
+        }
+    }
 }

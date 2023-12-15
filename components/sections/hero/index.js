@@ -21,7 +21,7 @@ import style from "./hero.module.scss";
 export const Hero = () => {
     return (
         <>
-            <section className={` ${style.hero} hero-gl section-bg-color-1`} id="hero">
+            <section className={` ${style.hero} hero-gl`} id="hero">
                 <Container>
                     <Row className="align-items-center">
                         {/* hero content */}
@@ -46,7 +46,10 @@ export const Hero = () => {
                                     className={`${style.buttonsAvatars} d-flex align-items-center`}
                                 >
                                     <div className={`${style.buttonWrapper}`}>
-                                        <button className="button-secondary button-large white-color text-very-large weight-medium">
+                                        <button
+                                            className="button-secondary button-large white-color text-very-large weight-medium"
+                                            name="Let’s get started"
+                                        >
                                             Let’s get started
                                         </button>
                                     </div>
@@ -106,7 +109,7 @@ export const Hero = () => {
                         {/* hero clients slider */}
                         <Col lg={12}>
                             <div
-                                className={`${style.sliderWrapper} bg-secondary-normal radius-large`}
+                                className={`${style.sliderWrapper} bg-secondary-normal radius-large bg-mask`}
                             >
                                 <div className={`${style.sliderText}`}>
                                     {/* slider text */}

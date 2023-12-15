@@ -3,6 +3,19 @@
 
 .hero {
     padding: 165px 0px 53px 0px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 950px;
+        background: map-get($section-bg-gradient-color, color-1);
+        z-index: -1;
+    }
 
     //  hero content
 
@@ -85,10 +98,6 @@
         //  mask shape
         -webkit-mask-image: url("../../../public/images/sections/hero/shapes/rectangle.png");
         mask-image: url("../../../public/images/sections/hero/shapes/rectangle.png");
-        -webkit-mask-size: 100%;
-        mask-size: 100%;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
 
         .sliderText {
             margin-bottom: 15px;

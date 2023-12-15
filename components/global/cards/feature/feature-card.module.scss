@@ -1,0 +1,20 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// Features box
+
+.featuresBoxWrapper {
+    .ImageWrapper {
+        height: 90px;
+        width: 90px;
+        background: map-get($light-blue-gradients, color-1);
+        border-radius: map-get($border-radius, medium);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titleWrapper {
+        margin: 16px 0px 7px 0px;
+    }
+}
