@@ -1,0 +1,23 @@
+// services
+.services {
+    margin: 126px 0px;
+
+    // Services Title
+    .descriptionWrapper {
+        margin: 27px 0px 46px 0px;
+    }
+
+    // Services Content
+    .contentWrapper {
+        padding-left: 80px;
+
+        .LeftServices > div:last-child,
+        .RightServices > div:last-child {
+            margin-bottom: 0px;
+        }
+
+        .LeftServices {
+            margin-top: 126px;
+        }
+    }
+}

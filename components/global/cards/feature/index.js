@@ -16,7 +16,7 @@ export const FeatureCard = ({ img, title, description }) => {
                 </div>
                 {/* Feature title */}
                 <div className={`${style.titleWrapper}`}>
-                    <h5 className="heading-h5 weight-bold">{title}</h5>
+                    <h5 className="heading-h5 weight-semibold">{title}</h5>
                 </div>
                 {/* Feature description */}
                 <div className={`${style.descriptionWrapper}`}>

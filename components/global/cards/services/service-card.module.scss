@@ -1,0 +1,22 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// service card
+
+.ServiceBoxWrapper {
+    margin-bottom: 126px;
+
+    .ImageWrapper {
+        height: 90px;
+        width: 90px;
+        background: map-get($light-blue-gradients, color-1);
+        border-radius: map-get($border-radius, medium);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ServicesLeft {
+        margin-bottom: 126px;
+    }
+}
