@@ -1,6 +1,6 @@
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
-// Define reusable components
+import Image from "next/image";
 
 // Include image assets if necessary
 
@@ -9,7 +9,6 @@ import headerLogo from "@/images/logo/logo.png";
 
 // Apply styles or link external stylesheets
 import style from "./header.module.scss";
-import Image from "next/image";
 
 // Define the main functional component
 export const Header = () => {

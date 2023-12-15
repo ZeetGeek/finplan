@@ -1,0 +1,68 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// about section
+.about {
+    // image wrapper
+
+    .imageWrapper {
+        position: relative;
+        margin-left: 80px;
+
+        .mainImage {
+            position: relative;
+            z-index: 1;
+        }
+
+        .shape {
+            position: absolute;
+
+            // circle dot image
+
+            &:nth-child(1) {
+                top: 100px;
+                right: -30px;
+                z-index: 2;
+            }
+
+            // square dot image
+
+            &:nth-child(2) {
+                bottom: 60px;
+                left: -70px;
+                z-index: 2;
+            }
+
+            // square bg shape
+
+            &:nth-child(3) {
+                top: 115px;
+                left: 0;
+            }
+        }
+
+        .squareBgShape {
+            -webkit-mask-image: url("../../../public//images/sections/about-us/shapes/rectangle.png");
+            mask-image: url("../../../public//images/sections/about-us/shapes/rectangle.png");
+            background-color: map-get($light-blue-color, color-3);
+            max-width: 432px;
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    // content wrapper
+
+    .contentWrapper {
+        padding-left: 80px;
+
+        .descriptionWrapper {
+            margin: 23px 0px 44px 0px;
+            max-width: 427px;
+
+            .extraInfo {
+                margin-top: 23px;
+            }
+        }
+    }
+}

@@ -25,7 +25,7 @@ export const Features = () => {
                         {/* Title and subtitle */}
                         <Col lg={6} className="mx-auto text-center">
                             <div className={`${style.titleWrapper}`}>
-                                <SubTitle text="services" className="mb-2" />
+                                <SubTitle text="services"/>
                                 <h2 className="heading-h2 black-color weight-medium">
                                     Trusted advisors for financial success.
                                 </h2>
