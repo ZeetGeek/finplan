@@ -29,10 +29,10 @@ export const Home = () => {
             <Services />
             <Showcase />
             <Pricing />
-            {/* <OurTeam /> */}
-            {/* <Reviews /> */}
-            {/* <Blog /> */}
-            {/* <NewsLetter /> */}
+            <OurTeam />
+            <Reviews />
+            <Blog />
+            <NewsLetter />
         </>
     );
 };
