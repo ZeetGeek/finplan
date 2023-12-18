@@ -1,0 +1,37 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// pricing
+.pricingBoxWrapper {
+      position: relative;
+    .PriceAndNameWrapper,
+    .PlanDetailsWrapper {
+        padding: 40px;
+    }
+
+
+    .PlanDetailsNamesWrapper {
+        margin-bottom: 30px;
+
+        ul {
+            li {
+                margin-bottom: 16px;
+                gap: 17px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                svg {
+                    color: map-get($primary-color, normal);
+                }
+            }
+        }
+    }
+
+    .newIconWrapper {
+        position: absolute;
+        top: -35px;
+        left: -30px;
+    }
+}

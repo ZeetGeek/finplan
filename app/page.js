@@ -5,7 +5,7 @@ import Hero from "@/components/sections/hero";
 import Features from "@/components/sections/features";
 import AboutUs from "@/components/sections/about-us";
 import Services from "@/components/sections/services";
-import Showcase from "@/components/sections/Showcase";
+import Showcase from "@/components/sections/showcase";
 import Pricing from "@/components/sections/pricing";
 import OurTeam from "@/components/sections/our-team";
 import Reviews from "@/components/sections/reviews";
@@ -28,7 +28,7 @@ export const Home = () => {
             <AboutUs />
             <Services />
             <Showcase />
-            {/* <Pricing /> */}
+            <Pricing />
             {/* <OurTeam /> */}
             {/* <Reviews /> */}
             {/* <Blog /> */}

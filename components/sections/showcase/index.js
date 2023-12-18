@@ -1,10 +1,6 @@
-"use client";
-import { useEffect } from "react";
-
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
-import Link from "next/link";
 
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
