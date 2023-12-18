@@ -1,22 +1,80 @@
+"use client";
+
 // Import dependencies here
+import { Container, Row, Col } from "react-bootstrap";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 // Define reusable components
+// import {} from "@/components/";
 
 // Include image assets if necessary
+import ReviewImage from "@/images/sections/reviews/1.png";
 
 // Fetch or import data required for the page
+import { ReviewsData as data } from "@/data/reviews";
 
 // Apply styles or link external stylesheets
 import style from "./reviews.module.scss";
 
 // Define the main functional component
 export const Reviews = () => {
-     return (
-          <>
-               {/* Page content goes here */}
-               <h1>Reviews</h1>
-          </>
-     );
+    return (
+        <>
+            <section className={`${style.reviews} reviews-gl section-bg-color-3`} id="reviews">
+                {/* Page content goes here */}
+                <Container>
+                    <Row className="d-flex align-items-center">
+                        {/* Review Image */}
+                        <Col lg={6}>
+                            <div className={`${style.imageWrapper}`}>
+                                <Image
+                                    src={ReviewImage}
+                                    height={444}
+                                    width={515}
+                                    alt="reviews image"
+                                />
+                            </div>
+                        </Col>
+                        {/* All Reviews Slider */}
+                        <Col lg={6}>
+                            {/* Reviews slider */}
+                            <div className={`${style.sliderWrapper} ps-5`}>
+                                <Swiper
+                                    loop={true}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: false,
+                                        pauseOnMouseEnter: true,
+                                    }}
+                                    modules={[Autoplay]}
+                                >
+                                        {data.map((item) => {
+                                             return (
+                                                 <SwiperSlide key={item.id}>
+                                                     <div styleName={style.description_wrapper}>
+                                                         <p className="heading-h5 color-black weight-semibold">
+                                                             &quot;{item.description}&quot;
+                                                         </p>
+                                                         <h5 className="text-large weight-semibold mt-4">
+                                                             {item.name}
+                                                         </h5>
+                                                         <span className="text-medium color-gray mt-1 d-inline-block">
+                                                             {item.profession}
+                                                         </span>
+                                                     </div>
+                                                 </SwiperSlide>
+                                             );
+                                        })}
+                                </Swiper>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+        </>
+    );
 };
 
 // Export the component as default

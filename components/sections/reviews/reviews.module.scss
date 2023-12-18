@@ -1,0 +1,30 @@
+// reviews
+
+.reviews {
+    margin: 172px 0px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: -5%;
+        bottom: -50%;
+        height: 500px;
+        width: 500px;
+        border-radius: 100%;
+        background: linear-gradient(white, white) padding-box,
+            linear-gradient(
+                    230deg,
+                    rgba(214, 227, 255, 0) 0.23%,
+                    #ffc737 0.23%,
+                    rgba(214, 227, 255, 0) 78.93%
+                )
+                border-box;
+        border: 74px solid transparent;
+    }
+
+    .imageWrapper {
+        margin-top: 40px;
+    }
+}
