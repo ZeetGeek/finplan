@@ -1,0 +1,21 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// blog card
+
+.boxWrapper {
+    .imageWrapper {
+        position: relative;
+
+        .category {
+            position: absolute;
+            left: 13px;
+            bottom: 13px;
+            padding: 6px 10px;
+        }
+    }
+
+    .titleWrapper {
+        margin: 19px 0px 24px 0px;
+    }
+}
