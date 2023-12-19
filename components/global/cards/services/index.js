@@ -12,10 +12,15 @@ export const ServicesCard = ({ img, title, description }) => {
     return (
         <>
             {/* Page content goes here */}
-            <div className={`${style.ServiceBoxWrapper} d-flex align-items-start`}>
+            <div
+                className={`${style.ServiceBoxWrapper} d-flex align-items-start text-center text-sm-start`}
+            >
                 <Row>
                     {/* Service icon image */}
-                    <Col sm={4}>
+                    <Col
+                        sm={4}
+                        className="d-flex justify-content-center justify-content-md-start mb-3 mb-sm-0 "
+                    >
                         <div className={`${style.ImageWrapper}`}>
                             <Image
                                 src={img.src}
@@ -29,7 +34,7 @@ export const ServicesCard = ({ img, title, description }) => {
                     <Col sm={8} className="ps-3">
                         <div className={`${style.titleWrapper}`}>
                             <h4 className="heading-h4 weight-semibold">{title}</h4>
-                            <div className={`${style.descriptionWrapper}`}>
+                            <div className={`${style.descriptionWrapper} mt-2`}>
                                 <p className="text-medium gray-light">{description}</p>
                             </div>
                         </div>

@@ -21,39 +21,41 @@ export const Services = () => {
                     <Row className="d-flex align-items-start">
                         {/* Services Title */}
                         <Col lg={4}>
-                            {/* Title and subtle */}
-                            <div className={`${style.titleWrapper}`}>
-                                <SubTitle text="services" />
-                                <h2 className="heading-h2 black-color weight-medium">
-                                    Our services for financial future.
-                                </h2>
-                            </div>
-                            {/* Description */}
-                            <div className={`${style.descriptionWrapper}`}>
-                                <p className="text-medium gray-light">
-                                    Lorem ipsum dolor sit amet, adipiscing elit. Ut elit tellus
-                                    luctus ullamcorper.
-                                </p>
-                            </div>
-                            {/* Button */}
-                            <div className={`${style.buttonWrapper}`}>
-                                <button
-                                    className="button-secondary button-medium"
-                                    name="More Service"
-                                >
-                                    More Service
-                                </button>
+                            <div className="text-center text-lg-star">
+                                {/* Title and subtle */}
+                                <div className={`${style.titleWrapper}`}>
+                                    <SubTitle text="services" />
+                                    <h2 className="heading-h2 black-color weight-medium">
+                                        Our services for financial future.
+                                    </h2>
+                                </div>
+                                {/* Description */}
+                                <div className={`${style.descriptionWrapper}`}>
+                                    <p className="text-medium gray-light">
+                                        Lorem ipsum dolor sit amet, adipiscing elit. Ut elit tellus
+                                        luctus ullamcorper.
+                                    </p>
+                                </div>
+                                {/* Button */}
+                                <div className={`${style.buttonWrapper}`}>
+                                    <button
+                                        className="button-secondary button-medium"
+                                        name="More Service"
+                                    >
+                                        More Service
+                                    </button>
+                                </div>
                             </div>
                         </Col>
                         {/* Services Content */}
                         <Col lg={8}>
                             <div className={`${style.contentWrapper}`}>
-                                <Row>
+                                <Row className="gap-4 gap-sm-0">
                                     {/* Services box */}
                                     {/* Print services dynamic data */}
 
                                     {/* Services Left */}
-                                    <Col lg={6}>
+                                    <Col sm={6}>
                                         <div className={`${style.LeftServices}`}>
                                             {data.map((item) => {
                                                 return (
@@ -74,7 +76,7 @@ export const Services = () => {
                                         </div>
                                     </Col>
                                     {/* Services Right */}
-                                    <Col lg={6}>
+                                    <Col sm={6}>
                                         <div className={`${style.RightServices}`}>
                                             {data.map((item) => {
                                                 return (
