@@ -21,12 +21,12 @@ import style from "./hero.module.scss";
 export const Hero = () => {
     return (
         <>
-            <section className={` ${style.hero} hero-gl`} id="hero">
+            <section className={` ${style.hero} hero-gl section-bg-color-1`} id="hero">
                 <Container>
                     <Row className="align-items-center">
                         {/* hero content */}
-                        <Col lg={6} xl={7}>
-                            <div className={`${style.contentWrapper}`}>
+                        <Col lg={7}>
+                            <div className={`${style.contentWrapper} text-center text-lg-start`}>
                                 {/* hero title */}
                                 <div className={`${style.title}`}>
                                     <h1 className="heading-h1 black-color weight-medium">
@@ -83,7 +83,7 @@ export const Hero = () => {
                             </div>
                         </Col>
                         {/* hero images */}
-                        <Col lg={6} xl={5}>
+                        <Col lg={5} className="d-flex align-items-end justify-content-center">
                             <div className={`${style.imageWrapper}`}>
                                 {/* hero main image */}
                                 <div className={`${style.mainImage}`}>
@@ -96,7 +96,7 @@ export const Hero = () => {
                                 </div>
 
                                 {/* hero arrow image */}
-                                <div className={`${style.arrowImage}`}>
+                                <div className={`${style.arrowImage} d-none`}>
                                     <Image
                                         src={arrowImage}
                                         height={90}
@@ -125,6 +125,21 @@ export const Hero = () => {
                                         autoplay={{
                                             delay: 1500,
                                             disableOnInteraction: false,
+                                        }}
+                                        breakpoints={{
+                                            1200: {
+                                                slidesPerView: 5,
+                                                spaceBetween: 30,
+                                            },
+                                            991: {
+                                                slidesPerView: 4,
+                                            },
+                                            768: {
+                                                slidesPerView: 3,
+                                            },
+                                            576: {
+                                                slidesPerView: 2,
+                                            },
                                         }}
                                         freeMode={true}
                                         loop={true}

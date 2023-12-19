@@ -24,15 +24,15 @@ export const Home = () => {
         <>
             {/* Page content goes here */}
             <Hero />
-            <Features />
-            <AboutUs />
-            <Services />
-            <Showcase />
-            <Pricing />
-            <OurTeam />
-            <Reviews />
-            <Blog />
-            <NewsLetter />
+            {/* <Features /> */}
+            {/* <AboutUs /> */}
+            {/* <Services /> */}
+            {/* <Showcase /> */}
+            {/* <Pricing /> */}
+            {/* <OurTeam /> */}
+            {/* <Reviews /> */}
+            {/* <Blog /> */}
+            {/* <NewsLetter /> */}
         </>
     );
 };

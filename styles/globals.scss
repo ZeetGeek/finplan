@@ -92,6 +92,27 @@ p {
     // Comment: Heading styles based on variables
     .heading-#{$key} {
         font-size: #{$value}px;
+        line-height: 1.2;
+
+        @media (max-width: 1199px) {
+            font-size: #{$value * 0.9}px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: #{$value * 0.8}px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: #{$value * 0.7}px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: #{$value * 0.6}px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: #{$value * 0.5}px;
+        }
     }
 }
 
@@ -100,6 +121,14 @@ p {
     // Comment: Text styles based on variables
     .text-#{$key} {
         font-size: #{$value}px;
+
+        @media (max-width: 1199px) {
+            font-size: #{$value * 0.9}px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: #{$value * 0.8}px;
+        }
     }
 }
 
@@ -306,6 +335,36 @@ p {
 @each $button, $styles in $button-sizes {
     .button-#{$button} {
         padding: map-get($styles, padding);
+    }
+}
+
+// button responsive
+
+@media (max-width: 991px) {
+    .button-small {
+        padding: 6px 15px;
+    }
+
+    .button-medium {
+        padding: 10px 20px;
+    }
+
+    .button-large {
+         padding: 12px 24px,
+    }
+}
+
+@media (max-width: 575px) {
+    .button-small {
+        padding: 4px 13px;
+    }
+
+    .button-medium {
+        padding: 8px 18px;
+    }
+
+    .button-large {
+         padding: 10px 20px,
     }
 }
 
