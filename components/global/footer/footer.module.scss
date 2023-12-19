@@ -1,0 +1,36 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// footer
+
+.footer {
+
+    padding: 200px 0px 50px 0px;
+
+    svg {
+        color: map-get($gray-color, light);
+        transition: map-get($transition, fast);
+
+        &:hover {
+            color: map-get($secondary-color, normal);
+        }
+    }
+
+    a {
+        transition: map-get($transition, fast);
+
+        &:hover {
+            color: map-get($secondary-color, normal);
+        }
+    }
+
+    // column 1
+    .column1Wrapper {
+        max-width: 323px;
+    }
+
+    //   copyright
+    .copyRightWrapper {
+        margin-top: 80px;
+    }
+}
