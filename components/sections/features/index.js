@@ -34,12 +34,12 @@ export const Features = () => {
                         {/* All features */}
                         <Col lg={12}>
                             <div className={`${style.allFeaturesWrapper} all_features_gl`}>
-                                <Row>
+                                <Row className="align-items-center justify-content-center">
                                     {/* Feature box */}
                                     {/* Print Features Dynamic Data */}
                                     {data.map((item) => {
                                         return (
-                                            <Col lg={4} key={item.id}>
+                                            <Col lg={4} md={6} key={item.id}>
                                                 <FeatureCard
                                                     img={{
                                                         ...item.img,

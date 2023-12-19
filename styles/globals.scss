@@ -378,15 +378,15 @@ p {
             --bs-gutter-x: 111px;
 
             @media (max-width: 991px) {
-                gap: 50px;
+                row-gap: 50px;
             }
 
             @media (max-width: 767px) {
-                gap: 40px;
+                row-gap: 40px;
             }
 
             @media (max-width: 575px) {
-                gap: 30px;
+                row-gap: 30px;
             }
         }
     }
