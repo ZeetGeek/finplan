@@ -1,4 +1,12 @@
 .subTitle {
     letter-spacing: 1.89px;
     padding: 5px 14px;
+
+    @media (max-width: 991px) {
+        padding: 4px 12px;
+    }
+
+    @media (max-width: screen) {
+        padding: 3px 10px;
+    }
 }

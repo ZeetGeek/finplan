@@ -9,9 +9,9 @@ export const FeatureCard = ({ img, title, description }) => {
     return (
         <>
             {/* Page content goes here */}
-            <div className={`${style.featuresBoxWrapper}`}>
+            <div className={`${style.featuresBoxWrapper} text-center text-lg-start`}>
                 {/* Feature icon image */}
-                <div className={`${style.ImageWrapper}`}>
+                <div className={`${style.ImageWrapper} mx-auto m-lg-0`}>
                     <Image src={img.src} height={img.height} width={img.width} alt={img.alt} />
                 </div>
                 {/* Feature title */}

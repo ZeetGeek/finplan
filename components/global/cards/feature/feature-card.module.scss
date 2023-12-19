@@ -4,6 +4,13 @@
 // Features box
 
 .featuresBoxWrapper {
+    // responsive
+
+    @media (max-width: 991px) {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     .ImageWrapper {
         height: 90px;
         width: 90px;

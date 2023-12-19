@@ -3,7 +3,47 @@
 .features {
     margin: 126px 0px;
 
+    @media (max-width: 1199px) {
+        margin: 110px 0px;
+    }
+
+    @media (max-width: 991px) {
+        margin: 80px 0px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 60px 0px;
+    }
+
+    @media (max-width: 575px) {
+        margin: 40px 0px;
+    }
+
+    @media (max-width: 480x) {
+        margin: 30px 0px;
+    }
+
     .titleWrapper {
         margin-bottom: 101px;
+
+        @media (max-width: 1199px) {
+            margin-bottom: 90px;
+        }
+
+        @media (max-width: 991px) {
+            margin-bottom: 70px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 480x) {
+            margin-bottom: 20px;
+        }
     }
 }
