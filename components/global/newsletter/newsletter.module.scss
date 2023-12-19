@@ -1,0 +1,29 @@
+// Import Variables
+@import "@/styles/variables.scss";
+
+// newsletter
+
+.newsletter {
+    margin-top: 176px;
+
+    .newsletterWrapper {
+        -webkit-mask-image: url("../../../public/images/sections/newsletter/shaps/1.png");
+        mask-image: url("../../../public/images/sections/newsletter/shaps/1.png");
+        background: map-get($secondary-color, normal);
+        padding: 61px 100px;
+    }
+
+    .signInWrapper {
+        padding-top: 15px;
+        input {
+            padding: 16px 28px;
+            border: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.32) !important;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.62);
+            }
+        }
+    }
+}

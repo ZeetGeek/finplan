@@ -10,7 +10,7 @@ import Pricing from "@/components/sections/pricing";
 import OurTeam from "@/components/sections/our-team";
 import Reviews from "@/components/sections/reviews";
 import Blog from "@/components/sections/blog";
-import NewsLetter from "@/components/global/news-letter";
+import NewsLetter from "@/components/global/newsletter";
 
 // Include image assets if necessary
 
