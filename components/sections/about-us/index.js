@@ -20,9 +20,9 @@ export const AboutUs = () => {
             {/* Page content goes here */}
             <section className={`${style.about} about-gl`} id="about">
                 <Container>
-                    <Row className="d-flex align-items-center">
+                    <Row className="d-flex align-items-center gap-4 gap-lg-0">
                         {/* About image */}
-                        <Col lg={6} className="d-flex align-items-start">
+                        <Col lg={6} className="d-flex align-items-center justify-content-center">
                             <div className={`${style.imageWrapper}`}>
                                 {/* Main image */}
                                 <div className={`${style.mainImage} bg-mask`}>
@@ -59,7 +59,9 @@ export const AboutUs = () => {
 
                         {/* About content */}
                         <Col lg={6}>
-                            <div className={`${style.contentWrapper}`}>
+                            <div
+                                className={`${style.contentWrapper} text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start`}
+                            >
                                 {/* Title and subtitle */}
                                 <div className={`${style.titleWrapper}`}>
                                     <SubTitle text="about us" />
@@ -75,7 +77,7 @@ export const AboutUs = () => {
                                         leo eiusmod tempor.
                                     </p>
                                     <div
-                                        className={`${style.extraInfo} d-flex align-items-center justify-content-between`}
+                                        className={`${style.extraInfo} d-flex align-items-center justify-content-center justify-content-lg-between gap-3 gap-sm-5 gap-lg-0`}
                                     >
                                         <div className={`${style.infoBox}`}>
                                             <h2 className="heading-h2 black-color weight-medium">
