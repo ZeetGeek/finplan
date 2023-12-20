@@ -30,7 +30,7 @@ export const Home = () => {
             <Showcase />
             <Pricing />
             <OurTeam />
-            {/* <Reviews /> */}
+            <Reviews />
             {/* <Blog /> */}
             {/* <NewsLetter /> */}
         </>

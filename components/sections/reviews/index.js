@@ -25,10 +25,12 @@ export const Reviews = () => {
             <section className={`${style.reviews} reviews-gl section-bg-color-3`} id="reviews">
                 {/* Page content goes here */}
                 <Container>
-                    <Row className="d-flex align-items-center">
+                    <Row className="d-flex align-items-center justify-content-center">
                         {/* Review Image */}
                         <Col lg={6}>
-                            <div className={`${style.imageWrapper}`}>
+                            <div
+                                className={`${style.imageWrapper} d-flex align-items-center justify-content-center justify-content-lg-start`}
+                            >
                                 <Image
                                     src={ReviewImage}
                                     height={444}
@@ -40,7 +42,9 @@ export const Reviews = () => {
                         {/* All Reviews Slider */}
                         <Col lg={6}>
                             {/* Reviews slider */}
-                            <div className={`${style.sliderWrapper} ps-5`}>
+                            <div
+                                className={`${style.sliderWrapper} ps-0 ps-lg-5 mt-4 mt-sm-5 mt-lg-0`}
+                            >
                                 <Swiper
                                     loop={true}
                                     autoplay={{
@@ -50,23 +54,26 @@ export const Reviews = () => {
                                     }}
                                     modules={[Autoplay]}
                                 >
-                                        {data.map((item) => {
-                                             return (
-                                                 <SwiperSlide key={item.id}>
-                                                     <div styleName={style.description_wrapper}>
-                                                         <p className="heading-h5 color-black weight-semibold">
-                                                             &quot;{item.description}&quot;
-                                                         </p>
-                                                         <h5 className="text-large weight-semibold mt-4">
-                                                             {item.name}
-                                                         </h5>
-                                                         <span className="text-medium color-gray mt-1 d-inline-block">
-                                                             {item.profession}
-                                                         </span>
-                                                     </div>
-                                                 </SwiperSlide>
-                                             );
-                                        })}
+                                    {data.map((item) => {
+                                        return (
+                                            <SwiperSlide key={item.id}>
+                                                <div
+                                                    styleName={style.description_wrapper}
+                                                    className="text-center text-lg-start"
+                                                >
+                                                    <p className="heading-h5 color-black weight-semibold">
+                                                        &quot;{item.description}&quot;
+                                                    </p>
+                                                    <h5 className="text-large weight-semibold mt-4">
+                                                        {item.name}
+                                                    </h5>
+                                                    <span className="text-medium color-gray mt-1 d-inline-block">
+                                                        {item.profession}
+                                                    </span>
+                                                </div>
+                                            </SwiperSlide>
+                                        );
+                                    })}
                                 </Swiper>
                             </div>
                         </Col>
