@@ -39,10 +39,13 @@ export const OurTeam = () => {
                                     {/* Team Member Dynamic Data */}
                                     {data.map((item) => {
                                         return (
-                                            <Col lg={3} key={item.id}>
-                                                <TeamMemberCard key={item.id} member={{
-                                                    ...item
-                                                }} />
+                                            <Col xl={3} md={6} key={item.id}>
+                                                <TeamMemberCard
+                                                    key={item.id}
+                                                    member={{
+                                                        ...item,
+                                                    }}
+                                                />
                                             </Col>
                                         );
                                     })}
