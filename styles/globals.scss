@@ -29,7 +29,7 @@
 body,
 html {
     /* Hide horizontal overflow */
-    overflow-x: hidden;
+    // overflow-x: hidden;
     background: $white-color;
 }
 
@@ -379,15 +379,27 @@ p {
 
             @media (max-width: 991px) {
                 row-gap: 50px;
+                --bs-gutter-x: 50px;
             }
 
             @media (max-width: 767px) {
                 row-gap: 40px;
+                --bs-gutter-x: 24px;
             }
 
             @media (max-width: 575px) {
                 row-gap: 30px;
             }
+        }
+    }
+}
+
+// showcase section
+
+.showcase-studio-wrapper-gl {
+    @media (max-width: 575px) {
+        .row {
+            gap: 20px;
         }
     }
 }

@@ -3,12 +3,46 @@
     padding: 125px 0px 115px 0px;
     position: relative;
 
+    @media (max-width: 1200px) {
+        padding: 100px 0px;
+    }
+
+    @media (max-width: 991px) {
+        padding: 80px 0px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 60px 0px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 40px 0px;
+    }
+
     // Showcase all studies
     .StudiesWrapper {
         padding: 0px 25px;
         margin-top: 80px;
+
+        @media (max-width: 575px) {
+            padding: 0px;
+
+            margin-top: 40px;
+        }
+
         .even {
             margin-top: 60px;
+
+            @media (max-width: 575px) {
+                margin-top: 0px;
+            }
+        }
+
+        .StudiesImagesWrapper {
+            @media (max-width: 575px) {
+                max-width: 300px;
+                margin: 0 auto;
+            }
         }
     }
 
@@ -20,6 +54,19 @@
             position: absolute;
             top: -40px;
             right: 141px;
+
+            @media (max-width: 991px) {
+                height: auto;
+                width: calc(136px - 30px);
+                right: 80px;
+                top: -20px;
+            }
+
+            @media (max-width: 575px) {
+                width: calc(136px - 60px);
+                right: 20px;
+                top: -10px;
+            }
         }
 
         // Square Dots Circle
@@ -28,6 +75,17 @@
             position: absolute;
             bottom: -55px;
             left: 172px;
+
+            @media (max-width: 991px) {
+                height: auto;
+                width: calc(165px - 30px);
+                bottom: -35px;
+            }
+
+            @media (max-width: 575px) {
+                width: calc(165px - 60px);
+                bottom: -25px;
+            }
         }
     }
 }

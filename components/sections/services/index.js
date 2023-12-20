@@ -21,7 +21,7 @@ export const Services = () => {
                     <Row className="d-flex align-items-start">
                         {/* Services Title */}
                         <Col lg={4}>
-                            <div className="text-center text-lg-star">
+                            <div className="text-center text-lg-start">
                                 {/* Title and subtle */}
                                 <div className={`${style.titleWrapper}`}>
                                     <SubTitle text="services" />
@@ -49,7 +49,7 @@ export const Services = () => {
                         </Col>
                         {/* Services Content */}
                         <Col lg={8}>
-                            <div className={`${style.contentWrapper}`}>
+                            <div className={`${style.contentWrapper} mt-3 mt-md-5 mt-sm-4 mt-lg-0`}>
                                 <Row className="gap-4 gap-sm-0">
                                     {/* Services box */}
                                     {/* Print services dynamic data */}
