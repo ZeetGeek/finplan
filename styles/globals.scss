@@ -399,7 +399,21 @@ p {
 .showcase-studio-wrapper-gl {
     @media (max-width: 575px) {
         .row {
-            gap: 20px;
+            row-gap: 20px;
+        }
+    }
+}
+
+.pricing-box-wrapper-gl {
+    @media (max-width: 991px) {
+        .row {
+            row-gap: 30px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .row {
+            row-gap: 20px;
         }
     }
 }

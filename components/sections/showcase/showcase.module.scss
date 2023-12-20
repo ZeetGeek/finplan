@@ -80,11 +80,13 @@
                 height: auto;
                 width: calc(165px - 30px);
                 bottom: -35px;
+                left: 80px;
             }
 
             @media (max-width: 575px) {
                 width: calc(165px - 60px);
                 bottom: -25px;
+                left: 20px;
             }
         }
     }

@@ -3,12 +3,21 @@
 
 // pricing
 .pricingBoxWrapper {
-      position: relative;
+    position: relative;
+
+    @media (max-width: 768px) {
+        max-width: 300px;
+        margin: 0px auto;
+    }
+
     .PriceAndNameWrapper,
     .PlanDetailsWrapper {
         padding: 40px;
-    }
 
+        @media (max-width: 1400px) {
+            padding: 30px;
+        }
+    }
 
     .PlanDetailsNamesWrapper {
         margin-bottom: 30px;
@@ -33,5 +42,14 @@
         position: absolute;
         top: -35px;
         left: -30px;
+
+        @media (max-width: 768px) {
+            top: 0px;
+            left: -10px;
+        }
+
+        @media (max-width: 575px) {
+            left: 10px;
+        }
     }
 }
