@@ -4,6 +4,11 @@
 // blog card
 
 .boxWrapper {
+    @media (max-width: 768px) {
+        max-width: 400px;
+        margin: 0px auto;
+    }
+
     .imageWrapper {
         position: relative;
 
@@ -17,5 +22,13 @@
 
     .titleWrapper {
         margin: 19px 0px 24px 0px;
+
+        @media (max-width: 991px) {
+            margin: 16px 0px 20px 0px;
+        }
+
+        @media (max-width: 575px) {
+            margin: 12px 0px 15px 0px;
+        }
     }
 }

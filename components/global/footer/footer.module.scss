@@ -4,8 +4,27 @@
 // footer
 
 .footer {
-
     padding: 200px 0px 50px 0px;
+
+    @media (max-width: 1200px) {
+        padding-top: 180px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 160px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 140px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 120px;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 100px;
+    }
 
     svg {
         color: map-get($gray-color, light);
@@ -29,8 +48,31 @@
         max-width: 323px;
     }
 
+    // column 2
+    .column2Wrapper,
+    .column3Wrapper,
+    .column4Wrapper {
+        ul {
+            li:last-child {
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+
     //   copyright
     .copyRightWrapper {
         margin-top: 80px;
+
+        @media (max-width: 991px) {
+            margin-top: 60px;
+        }
+
+        @media (max-width: 575px) {
+            margin-top: 40px;
+        }
+
+        @media (max-width: 480px) {
+            margin-top: 25px;
+        }
     }
 }

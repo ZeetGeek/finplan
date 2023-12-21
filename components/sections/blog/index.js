@@ -33,13 +33,13 @@ export const Blog = () => {
                         </Col>
                         {/* Blog content */}
                         <Col lg={12}>
-                            <div className={`${style.contentWrapper}`}>
-                                <Row>
+                            <div className={`${style.contentWrapper} blog-box-wrapper-gl`}>
+                                <Row className="d-flex justify-content-center align-items-center">
                                     {/* blog box */}
                                     {/* print dynamic data */}
                                     {data.map((item) => {
                                         return (
-                                            <Col lg={4} key={item.id}>
+                                            <Col lg={4} md={6} key={item.id}>
                                                 <BlogCard
                                                     blog={{
                                                         ...item.blog,

@@ -31,8 +31,8 @@ export const Home = () => {
             <Pricing />
             <OurTeam />
             <Reviews />
-            {/* <Blog /> */}
-            {/* <NewsLetter /> */}
+            <Blog />
+            <NewsLetter />
         </>
     );
 };

@@ -22,10 +22,12 @@ export const Footer = () => {
             {/* Page content goes here */}
             <footer className={`${style.footer} footer-gl section-bg-color-1`} id="footer">
                 <Container>
-                    <Row>
+                    <Row className="row-gap-4 row-gap-lg-0 text-center text-md-start">
                         {/* footer column 1 */}
-                        <Col lg={5} className={`${style.column1}`}>
-                            <div className={`${style.column1Wrapper}`}>
+                        <Col lg={5} md={6} className={`${style.column1}`}>
+                            <div
+                                className={`${style.column1Wrapper} mx-auto m-md-0 d-flex justify-content-center flex-column align-items-center align-items-md-start`}
+                            >
                                 {/* footer logo */}
                                 <div className={`${style.logoWrapper}`}>
                                     <Image
@@ -46,7 +48,7 @@ export const Footer = () => {
 
                                 {/* footer social links */}
                                 <div className={`${style.socialLinksWrapper}`}>
-                                    <ul className="d-flex align-items-center gap-3 mt-5">
+                                    <ul className="d-flex align-items-center gap-3 mt-3 mt-lg-5 mt-md-4">
                                         {socialMedia.map((item) => {
                                             return (
                                                 <li key={item.id}>
@@ -63,10 +65,10 @@ export const Footer = () => {
 
                         {/* footer column 2 */}
 
-                        <Col lg={2} className={`${style.column2} ps-4`}>
+                        <Col lg={2} md={6} className={`${style.column2} ps-lg-4 ps-md-5`}>
                             <div className={`${style.column2Wrapper}`}>
                                 {/* Links Title */}
-                                <h5 className=" mb-4 heading-h5 black-color weight-semibold">
+                                <h5 className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold">
                                     Menu
                                 </h5>
 
@@ -74,7 +76,7 @@ export const Footer = () => {
                                 <ul>
                                     {MenuLinks.map((item) => {
                                         return (
-                                            <li key={item.id} className="mb-4">
+                                            <li key={item.id} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
                                                     title={item.text}
@@ -91,10 +93,10 @@ export const Footer = () => {
 
                         {/* footer column 3 */}
 
-                        <Col lg={2} className={`${style.column3} ps-4`}>
+                        <Col lg={2} md={6} className={`${style.column3} ps-lg-4`}>
                             <div className={`${style.column3Wrapper}`}>
                                 {/* Links Title */}
-                                <h5 className=" mb-4 heading-h5 black-color weight-semibold">
+                                <h5 className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold">
                                     Links
                                 </h5>
 
@@ -102,7 +104,7 @@ export const Footer = () => {
                                 <ul>
                                     {TermsLink.map((item) => {
                                         return (
-                                            <li key={item.id} className="mb-4">
+                                            <li key={item.id} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
                                                     title={item.text}
@@ -118,10 +120,10 @@ export const Footer = () => {
                         </Col>
 
                         {/* footer column 4 */}
-                        <Col lg={3} className={`${style.column4} ps-5`}>
+                        <Col lg={3} md={6} className={`${style.column4} ps-lg-5 ps-md-5`}>
                             <div className={`${style.column4Wrapper}`}>
                                 {/* Links Title */}
-                                <h5 className=" mb-4 heading-h5 black-color weight-semibold">
+                                <h5 className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold">
                                     Our Address
                                 </h5>
 
@@ -129,7 +131,7 @@ export const Footer = () => {
                                 <ul>
                                     {addressLinks.map((item) => {
                                         return (
-                                            <li key={item.id} className="mb-4">
+                                            <li key={item.id} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
                                                     title={item.text}

@@ -417,3 +417,13 @@ p {
         }
     }
 }
+
+// blog section
+
+.blog-box-wrapper-gl {
+    .row {
+        @media (max-width: 991px) {
+            row-gap: 20px;
+        }
+    }
+}

@@ -15,19 +15,19 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-     title: "Finplan : Navigating Your Financial Future! 💼💸",
-     description:
-          "Embark on a financial adventure with Finplan, where every coin counts towards crafting your prosperous tomorrow! 💼💰",
+    title: "Finplan : Navigating Your Financial Future! 💼💸",
+    description:
+        "Embark on a financial adventure with Finplan, where every coin counts towards crafting your prosperous tomorrow! 💼💰",
 };
 
 export default function RootLayout({ children }) {
-     return (
-         <html lang="en">
-             <body className={`${poppins.variable}`}>
-                 <Header />
-                 {children}
-                 {/* <Footer /> */}
-             </body>
-         </html>
-     );
+    return (
+        <html lang="en">
+            <body className={`${poppins.variable}`}>
+                <Header />
+                {children}
+                <Footer />
+            </body>
+        </html>
+    );
 }

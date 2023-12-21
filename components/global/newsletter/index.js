@@ -18,7 +18,10 @@ export const Newsletter = () => {
     return (
         <>
             {/* Page content goes here */}
-            <section className={`${style.newsletter} newsletter-lg`} id="newsletter">
+            <section
+                className={`${style.newsletter} newsletter-lg d-xl-block d-none`}
+                id="newsletter"
+            >
                 <Container>
                     <div className={`${style.newsletterWrapper} bg-mask`}>
                         <Row className="align-items-center">
