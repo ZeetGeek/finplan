@@ -83,7 +83,7 @@
 
                 @media (max-width: 575px) {
                     margin-left: 0px;
-                    margin-bottom: 20px;
+                    margin-bottom: 0px;
                 }
 
                 .avatarImages {
@@ -141,18 +141,28 @@
         background-image: url("../../../public/images/sections//hero/shapes/rectangle.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
+
+        @media (max-width: 1200px) {
+            background-size: 100% 101%;
+            margin-top: -50px;
+        }
 
         @media (max-width: 991px) {
             padding: 50px 40px;
+            background-size: 100% 102%;
+            margin-top: -40px;
         }
 
         @media (max-width: 768px) {
             padding: 40px 30px;
+            margin-top: -10px;
         }
 
         @media (max-width: 575px) {
             padding: 30px 20px;
+            background-size: 100% 103%;
+            margin-top: 0px;
         }
 
         .sliderText {
