@@ -9,6 +9,7 @@ import { SubTitle } from "@/components/global/typography/sub-title";
 import MainImage from "@/images/sections/about-us/1.png";
 import CircleDotsShape from "@/images/sections/about-us/shapes/1.png";
 import SquareDotsShape from "@/images/sections/about-us/shapes/2.png";
+import SquareBgShapeImage from "@/images/sections/about-us/shapes/rectangle.png";
 
 // Apply styles or link external stylesheets
 import style from "./about-us.module.scss";
@@ -25,13 +26,22 @@ export const AboutUs = () => {
                         <Col lg={6} className="d-flex align-items-center justify-content-center">
                             <div className={`${style.imageWrapper}`}>
                                 {/* Main image */}
-                                <div className={`${style.mainImage} bg-mask`}>
+                                <div className={`${style.mainImage} `}>
                                     <Image
                                         src={MainImage}
                                         height={517}
                                         width={432}
                                         alt="About Us Main Image"
                                     />
+                                    {/* square bg shape */}
+                                    <div className={`${style.squareBgShape}`}>
+                                        <Image
+                                            src={SquareBgShapeImage}
+                                            height={399}
+                                            width={432}
+                                            alt="Background Shape"
+                                        />
+                                    </div>
                                 </div>
                                 {/* shapes */}
                                 <div className={`${style.shapes}`}>
@@ -51,8 +61,6 @@ export const AboutUs = () => {
                                         alt="Square Shape"
                                         className={`${style.shape}`}
                                     />
-                                    {/* square bg shape */}
-                                    <div className={`${style.squareBgShape} ${style.shape}`}></div>
                                 </div>
                             </div>
                         </Col>

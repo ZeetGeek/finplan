@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
 
 // Include image assets if necessary
 import heroImage from "@/images/sections/hero/1.png";
-import arrowImage from "@/images/sections/hero/shapes/1.png";
+import circleOverlayImage from "@/images/sections/hero/shapes/circle.png";
 
 // Fetch or import data required for the page
 import { avatarsData, clientData } from "@/data/hero";
@@ -54,7 +54,7 @@ export const Hero = () => {
                                         </button>
                                     </div>
                                     <div
-                                        className={`${style.avatarsWrapper} d-flex align-items-center`}
+                                        className={`${style.avatarsWrapper} d-flex align-items-center flex-column flex-sm-row row-gap-4 row-gap-sm-0`}
                                     >
                                         <div className={`${style.avatarImages}`}>
                                             {avatarsData.map((image) => (
@@ -93,24 +93,20 @@ export const Hero = () => {
                                         width={566}
                                         alt="Hero Image"
                                     />
-                                </div>
-
-                                {/* hero arrow image */}
-                                <div className={`${style.arrowImage} d-none`}>
-                                    <Image
-                                        src={arrowImage}
-                                        height={90}
-                                        width={230}
-                                        alt="Arrow Image"
-                                    />
+                                    <div className={style.circleOverlay}>
+                                        <Image
+                                            src={circleOverlayImage}
+                                            height={601}
+                                            width={601}
+                                            alt="circle overlay image"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </Col>
                         {/* hero clients slider */}
                         <Col lg={12}>
-                            <div
-                                className={`${style.sliderWrapper} bg-secondary-normal radius-large bg-mask`}
-                            >
+                            <div className={`${style.sliderWrapper} radius-extra-large`}>
                                 <div className={`${style.sliderText}`}>
                                     {/* slider text */}
                                     <span className="white-color text-very-large weight-semibold">
@@ -120,13 +116,17 @@ export const Hero = () => {
                                 <div className={`${style.clientImages}`}>
                                     {/* client images */}
                                     <Swiper
-                                        slidesPerView={6}
+                                        slidesPerView={1}
                                         spaceBetween={50}
                                         autoplay={{
                                             delay: 1500,
                                             disableOnInteraction: false,
                                         }}
                                         breakpoints={{
+                                            1920: {
+                                                slidesPerView: 6,
+                                                spaceBetween: 30,
+                                            },
                                             1200: {
                                                 slidesPerView: 5,
                                                 spaceBetween: 30,
@@ -137,7 +137,7 @@ export const Hero = () => {
                                             768: {
                                                 slidesPerView: 3,
                                             },
-                                            576: {
+                                            575: {
                                                 slidesPerView: 2,
                                             },
                                         }}
