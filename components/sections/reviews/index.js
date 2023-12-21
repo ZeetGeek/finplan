@@ -23,7 +23,7 @@ import style from "./reviews.module.scss";
 export const Reviews = () => {
     return (
         <>
-            <section className={`${style.reviews} reviews-gl section-bg-color-3`} id="reviews">
+            <section className={`${style.reviews} reviews-gl section-bg-color-1`} id="reviews">
                 {/* Page content goes here */}
                 <Container>
                     <Row className="d-flex align-items-center justify-content-center row-gap-3">
