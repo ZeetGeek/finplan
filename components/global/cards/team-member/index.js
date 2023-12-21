@@ -6,7 +6,8 @@ import Image from "next/image";
 // import {} from "@/components/";
 
 // Include image assets if necessary
-// import {} from "@/images/";
+import SquareBackgroundShape1 from "@/images/sections/our-team/shape/1.png";
+import SquareBackgroundShape2 from "@/images/sections/our-team/shape/2.png";
 
 // Fetch or import data required for the page
 // import {} from "@/data/";
@@ -19,10 +20,28 @@ export const ComponentName = ({ member }) => {
     return (
         <>
             {/* Page content goes here */}
-            <div className={`${style.boxWrapper} ${member.id % 2 === 0 ? style.odd : style.even} `}>
+            <div
+                className={`${style.boxWrapper} ${
+                    member.id % 2 === 0 ? style.odd : style.even
+                } text-center text-xl-start`}
+            >
                 {/* member image */}
-                <div className={`${style.imageWrapper} d-flex justify-content-center`}>
+                <div className={`${style.imageWrapper} d-flex justify-content-center `}>
                     <Image src={member.image} height={310} width={266} alt={member.imageAlt} />
+
+                    {/* square background shape image */}
+                    <div className={`${style.shapeWrapper}`}>
+                        <Image
+                            src={
+                                member.id % 2 === 0
+                                    ? SquareBackgroundShape1
+                                    : SquareBackgroundShape2
+                            }
+                            height={270}
+                            width={280}
+                            alt={member.imageAlt}
+                        />
+                    </div>
                 </div>
 
                 {/* member name */}

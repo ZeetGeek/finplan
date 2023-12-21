@@ -8,10 +8,38 @@
     margin-bottom: -100px;
 
     .newsletterWrapper {
-        -webkit-mask-image: url("../../../public/images/sections/newsletter/shaps/1.png");
-        mask-image: url("../../../public/images/sections/newsletter/shaps/1.png");
-        background: map-get($secondary-color, normal);
-        padding: 61px 100px;
+        background-image: url("../../../public/images/sections/newsletter/shaps/rectangle.png");
+        position: relative;
+        padding: 60px 50px;
+        margin: -45px 0px 0px 0px;
+        z-index: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 1200px) {
+            background-size: 100% 98%;
+            margin-top: -50px;
+        }
+
+        @media (max-width: 991px) {
+            padding: 70px 40px;
+            background-size: 100% 91%;
+            margin-top: -40px;
+        }
+
+        @media (max-width: 768px) {
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: -10px;
+        }
+
+        @media (max-width: 575px) {
+            background-size: 100% 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 0px;
+        }
     }
 
     .signInWrapper {

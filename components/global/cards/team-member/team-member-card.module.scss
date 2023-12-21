@@ -27,26 +27,10 @@
         position: relative;
         z-index: 1;
 
-        &::before {
-            content: "";
+        .shapeWrapper {
             position: absolute;
-            width: 100%;
-            height: 270px;
-            -webkit-mask-size: 100%;
-            mask-size: 100%;
-            -webkit-mask-image: url("../../../../public/images/sections/our-team/shape/1.png");
-            mask-image: url("../../../../public/images/sections/our-team/shape/1.png");
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-            background: map-get($light-blue-gradients, color-1);
-            bottom: -13px;
-            left: 0;
-            border-radius: map-get($border-radius, extra-large);
+            bottom: 0;
             z-index: -1;
-
-            @media (max-width: 1199px) {
-                bottom: 0px;
-            }
         }
     }
 }

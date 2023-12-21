@@ -34,7 +34,7 @@ export const OurTeam = () => {
                         {/* All team members */}
                         <Col lg={12}>
                             <div className={`${style.allTeamMembersWrapper}`}>
-                                <Row>
+                                <Row className="row-gap-3">
                                     {/* Team member box */}
                                     {/* Team Member Dynamic Data */}
                                     {data.map((item) => {

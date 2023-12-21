@@ -19,12 +19,12 @@ export const Newsletter = () => {
         <>
             {/* Page content goes here */}
             <section
-                className={`${style.newsletter} newsletter-lg d-xl-block d-none`}
+                className={`${style.newsletter} newsletter-lg text-center text-lg-start`}
                 id="newsletter"
             >
                 <Container>
                     <div className={`${style.newsletterWrapper} bg-mask`}>
-                        <Row className="align-items-center">
+                        <Row className="align-items-center justify-content-center">
                             {/* Title */}
                             <Col lg={6}>
                                 <h2 className="white-color heading-h2 weight-medium">
@@ -32,21 +32,24 @@ export const Newsletter = () => {
                                 </h2>
                             </Col>
                             {/* Newsletter sign up */}
-                            <Col lg={6} className="d-flex justify-content-end">
+                            <Col
+                                lg={6}
+                                className="d-flex justify-content-center justify-content-lg-end"
+                            >
                                 {/* Sign up form */}
                                 <div className={`${style.signInWrapper}`}>
                                     <form>
-                                        <div className="d-flex align-items-center gap-3">
+                                        <div className="d-flex align-items-center flex-column flex-sm-row gap-3">
                                             {/* Email input */}
                                             <input
                                                 type="email"
                                                 name="newsletter-email"
-                                                className={`${style.newsletterEmail} radius-small white-color`}
+                                                className={`${style.newsletterEmail} radius-small white-color input-gl`}
                                                 id="newsletter-email"
                                                 placeholder="Enter Your Email"
                                             />
                                             {/* Button */}
-                                            <button className="button-primary button-large">
+                                            <button className="button-primary button-large w-100 w-sm-auto">
                                                 Sign Up
                                             </button>
                                         </div>

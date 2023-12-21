@@ -349,8 +349,9 @@ p {
         padding: 10px 20px;
     }
 
-    .button-large {
-        padding: 12px 24px;
+    .button-large,
+    .input-gl {
+        padding: 12px 24px !important;
     }
 }
 
@@ -363,8 +364,9 @@ p {
         padding: 8px 18px;
     }
 
-    .button-large {
-        padding: 10px 20px;
+    .button-large,
+    .input-gl {
+        padding: 10px 20px !important;
     }
 }
 
