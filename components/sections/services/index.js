@@ -49,7 +49,7 @@ export const Services = () => {
                         </Col>
                         {/* Services Content */}
                         <Col lg={8}>
-                            <div className={`${style.contentWrapper} mt-3 mt-md-5 mt-sm-4 mt-lg-0`}>
+                            <div className={`${style.contentWrapper} mt-4 mt-sm-4 mt-md-5 mt-lg-0`}>
                                 <Row className="gap-4 gap-sm-0">
                                     {/* Services box */}
                                     {/* Print services dynamic data */}

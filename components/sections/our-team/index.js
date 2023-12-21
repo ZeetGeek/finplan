@@ -21,7 +21,7 @@ export const OurTeam = () => {
             {/* Page content goes here */}
             <section className={`${style.ourTeam} our-team-global`} id="our-team">
                 <Container>
-                    <Row>
+                    <Row className="row-gap-3" >
                         {/* Title and subtitle */}
                         <Col lg={6} className="mx-auto text-center">
                             <div className={`${style.titleWrapper}`}>

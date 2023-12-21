@@ -4,23 +4,23 @@
     padding: 181px 0px;
 
     @media (max-width: 1200px) {
-        padding: 160px 0px;
+        padding: 120px 0px;
     }
 
     @media (max-width: 991px) {
-        padding: 130px 0px;
-    }
-
-    @media (max-width: 768px) {
         padding: 100px 0px;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 768px) {
         padding: 80px 0px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 575px) {
         padding: 60px 0px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 40px 0px;
     }
 
     .descriptionWrapper {

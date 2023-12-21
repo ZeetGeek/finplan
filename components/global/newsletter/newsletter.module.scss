@@ -4,8 +4,27 @@
 // newsletter
 
 .newsletter {
-    margin-top: 176px;
-    margin-bottom: -100px;
+    margin: 176px 0px -100px 0px;
+
+    @media (max-width: 1200px) {
+        margin: 150px 0px -90px 0px;
+    }
+
+    @media (max-width: 991px) {
+        margin: 130px 0px -80px 0px;
+    }
+
+    @media (max-width: 768px) {
+        margin: 110px 0px -70px 0px;
+    }
+
+    @media (max-width: 575px) {
+        margin: 100px 0px -60px 0px;
+    }
+
+    @media (max-width: 575px) {
+        margin: 90px 0px -50px 0px;
+    }
 
     .newsletterWrapper {
         background-image: url("../../../public/images/sections/newsletter/shaps/rectangle.png");
@@ -31,10 +50,6 @@
 
         @media (max-width: 768px) {
             padding: 30px;
-        }
-
-        @media (max-width: 575px) {
-            padding: 20px;
         }
     }
 
