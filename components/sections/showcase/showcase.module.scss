@@ -45,6 +45,10 @@
             margin-top: 40px;
         }
 
+        @media (max-width: 480px) {
+            margin-top: 20px;
+        }
+
         .even {
             margin-top: 60px;
 
