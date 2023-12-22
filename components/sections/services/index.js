@@ -99,7 +99,7 @@ export const Services = () => {
                                 </Row>
                                 {/* Button */}
                                 <div
-                                    className={`${style.buttonWrapper} text-center mt-5 d-block d-lg-none`}
+                                    className={`${style.buttonWrapper} text-center mt-sm-5 mt-4 d-block d-lg-none`}
                                 >
                                     <button
                                         className="button-secondary button-medium"

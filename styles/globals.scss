@@ -78,6 +78,7 @@ p {
 }
 
 // Background mask size and mask repeat common class
+
 .bg-mask {
     -webkit-mask-size: 100%;
     mask-size: 100%;
@@ -109,10 +110,6 @@ p {
         @media (max-width: 575px) {
             font-size: #{$value * 0.65}px;
         }
-
-        // @media (max-width: 480px) {
-        //     font-size: #{$value * 0.5}px;
-        // }
     }
 }
 
