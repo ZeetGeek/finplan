@@ -25,7 +25,7 @@ export const Hero = () => {
                 <Container>
                     <Row className="align-items-center">
                         {/* hero content */}
-                        <Col lg={7}>
+                        <Col xl={7} lg={6}>
                             <div className={`${style.contentWrapper} text-center text-lg-start`}>
                                 {/* hero title */}
                                 <div className={`${style.title}`}>
@@ -83,7 +83,11 @@ export const Hero = () => {
                             </div>
                         </Col>
                         {/* hero images */}
-                        <Col lg={5} className="d-flex align-items-end justify-content-center">
+                        <Col
+                            xl={5}
+                            lg={6}
+                            className="d-flex align-items-end justify-content-center"
+                        >
                             <div className={`${style.imageWrapper}`}>
                                 {/* hero main image */}
                                 <div className={`${style.mainImage}`}>

@@ -21,9 +21,12 @@ export const AboutUs = () => {
             {/* Page content goes here */}
             <section className={`${style.about} about-gl`} id="about">
                 <Container>
-                    <Row className="d-flex align-items-center gap-4 gap-lg-0">
+                    <Row className="align-items-center gap-4 gap-lg-0">
                         {/* About image */}
-                        <Col lg={6} className="d-flex align-items-center justify-content-center">
+                        <Col
+                            lg={6}
+                            className="order-2 order-lg-1  d-flex align-items-center justify-content-center"
+                        >
                             <div className={`${style.imageWrapper}`}>
                                 {/* Main image */}
                                 <div className={`${style.mainImage} `}>
@@ -66,7 +69,7 @@ export const AboutUs = () => {
                         </Col>
 
                         {/* About content */}
-                        <Col lg={6}>
+                        <Col lg={6} className="order-1 order-lg-2">
                             <div
                                 className={`${style.contentWrapper} text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start`}
                             >

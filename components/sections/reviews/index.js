@@ -26,7 +26,7 @@ export const Reviews = () => {
             <section className={`${style.reviews} reviews-gl section-bg-color-1`} id="reviews">
                 {/* Page content goes here */}
                 <Container>
-                    <Row className="d-flex align-items-center justify-content-center row-gap-3">
+                    <Row className="align-items-center justify-content-center row-gap-3">
                         {/* Review Image */}
                         <Col lg={6} className="order-2 order-lg-1">
                             <div

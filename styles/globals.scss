@@ -42,7 +42,7 @@ img {
 a {
     /* Remove default link styling and set color to info status color */
     text-decoration: none;
-    color: map-get($status-colors, info);
+    color: unset;
 }
 
 ul {
@@ -95,7 +95,7 @@ p {
         line-height: 1.2;
 
         @media (max-width: 1199px) {
-            font-size: #{$value * 0.9}px;
+            font-size: #{$value * 0.8}px;
         }
 
         @media (max-width: 991px) {
@@ -371,6 +371,15 @@ p {
 }
 
 // section global css
+
+// header section
+.header_gl {
+    @media (max-width: 991px) {
+        .container {
+            max-width: 100%;
+        }
+    }
+}
 
 // feature section
 

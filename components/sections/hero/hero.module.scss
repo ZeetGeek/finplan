@@ -9,25 +9,28 @@
     z-index: 1;
 
     // responsive
+    @media (max-width: 1399px) {
+        padding: 180px 0px 45px 0px;
+    }
 
     @media (max-width: 1199px) {
-        padding: 145px 0px 45px 0px;
+        padding: 200px 0px 100px 0px;
     }
 
     @media (max-width: 991px) {
-        padding: 135px 0px 35px 0px;
+        padding: 180px 0px 90px 0px;
     }
 
     @media (max-width: 767px) {
-        padding-top: 125px;
+        padding: 160px 0px 80px 0px;
     }
 
     @media (max-width: 575px) {
-        padding-top: 100px;
+        padding: 140px 0px 70px 0px;
     }
 
     @media (max-width: 480px) {
-        padding-top: 90px;
+        padding: 120px 0px 60px 0px;
     }
 
     //  hero content
@@ -70,7 +73,7 @@
                 @media (max-width: 1199px) {
                     margin-left: 0px;
                     margin-top: 30px;
-                    margin-bottom: 60px;
+                    margin-bottom: 100px;
                 }
 
                 @media (max-width: 991px) {

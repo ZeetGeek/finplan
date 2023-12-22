@@ -21,7 +21,7 @@ export const Pricing = () => {
             {/* Page content goes here */}
             <section className={`${style.pricing} pricing_gl`} id="pricing">
                 <Container>
-                    <Row className="d-flex align-items-xl-start align-items-center justify-content-center text-center text-xl-start">
+                    <Row className="align-items-xl-start align-items-center justify-content-center text-center text-xl-start">
                         <Col xl={3} lg={6} className="mb-4 mb-sm-5">
                             {/* Title and subtle */}
                             <div className={`${style.titleWrapper}`}>
@@ -51,7 +51,7 @@ export const Pricing = () => {
                                 <Row className="align-items-end justify-content-center">
                                     {/* Map over the data array and render PricingCard for each item */}
                                     {data.map((item) => (
-                                        <Col lg={4} md={6} key={item.id}>
+                                        <Col lg={4} sm={6} key={item.id}>
                                             <PricingCard
                                                 name={item.name}
                                                 price={item.price}

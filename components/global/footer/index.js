@@ -135,6 +135,7 @@ export const Footer = () => {
                                                 <Link
                                                     href={item.navigate}
                                                     title={item.text}
+                                                    target={item.target}
                                                     className="text-medium gray-normal"
                                                 >
                                                     {item.text}

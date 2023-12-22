@@ -4,6 +4,14 @@
 // blog card
 
 .boxWrapper {
+    &:hover .imageWrapper img {
+        transform: rotate(3deg) scale(1.1);
+    }
+
+    &:hover .titleWrapper h5 {
+        color: map-get($secondary-color, normal);
+    }
+
     @media (max-width: 768px) {
         max-width: 400px;
         margin: 0px auto;

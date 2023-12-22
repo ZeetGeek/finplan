@@ -1,6 +1,7 @@
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 // Include image assets if necessary
 
@@ -25,12 +26,14 @@ export const Header = () => {
                             <div className="d-flex align-items-center justify-content-between">
                                 {/* logo */}
                                 <div className={`${style.logoWrapper}`}>
-                                    <Image
-                                        src={headerLogo}
-                                        height={34}
-                                        width={144}
-                                        alt="Finplan Logo"
-                                    />
+                                    <Link href="/">
+                                        <Image
+                                            src={headerLogo}
+                                            height={34}
+                                            width={144}
+                                            alt="Finplan Logo"
+                                        />
+                                    </Link>
                                 </div>
 
                                 {/* join now button */}

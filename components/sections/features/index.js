@@ -39,7 +39,7 @@ export const Features = () => {
                                     {/* Print Features Dynamic Data */}
                                     {data.map((item) => {
                                         return (
-                                            <Col lg={4} md={6} key={item.id}>
+                                            <Col lg={4} sm={6} key={item.id}>
                                                 <FeatureCard
                                                     img={{
                                                         ...item.img,

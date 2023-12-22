@@ -88,11 +88,12 @@ export const addressLinks = [
     {
         id: 0,
         text: "Jl. Niti Mandala Renon No.88, Denpasar, Bali - 80239",
-        navigate: "/",
+        navigate: "https://maps.app.goo.gl/qPn3biSe9EumXtg49",
+        target: "_blank",
     },
     {
         id: 1,
         text: "(316) 212-3456",
-        navigate: "/",
+        navigate: "tel:316-212-3456",
     },
 ];

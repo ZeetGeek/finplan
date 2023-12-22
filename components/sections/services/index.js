@@ -18,7 +18,7 @@ export const Services = () => {
             {/* Page content goes here */}
             <section className={`${style.services} services_gl`} id="services">
                 <Container>
-                    <Row className="d-flex align-items-start">
+                    <Row className="align-items-start">
                         {/* Services Title */}
                         <Col lg={4}>
                             <div className="text-center text-lg-start">
@@ -39,7 +39,7 @@ export const Services = () => {
                                 {/* Button */}
                                 <div className={`${style.buttonWrapper}`}>
                                     <button
-                                        className="button-secondary button-medium"
+                                        className="button-secondary button-medium d-none d-lg-block"
                                         name="More Service"
                                     >
                                         More Service
@@ -97,6 +97,17 @@ export const Services = () => {
                                         </div>
                                     </Col>
                                 </Row>
+                                {/* Button */}
+                                <div
+                                    className={`${style.buttonWrapper} text-center mt-5 d-block d-lg-none`}
+                                >
+                                    <button
+                                        className="button-secondary button-medium"
+                                        name="More Service"
+                                    >
+                                        More Service
+                                    </button>
+                                </div>
                             </div>
                         </Col>
                     </Row>
