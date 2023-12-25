@@ -34,7 +34,7 @@ export const Blog = () => {
                         {/* Blog content */}
                         <Col lg={12}>
                             <div className={`${style.contentWrapper} blog-box-wrapper-gl`}>
-                                <Row className="d-flex justify-content-center align-items-center">
+                                <Row className="justify-content-center align-items-center">
                                     {/* blog box */}
                                     {/* print dynamic data */}
                                     {data.map((item) => {
