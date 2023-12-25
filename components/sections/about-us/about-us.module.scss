@@ -25,62 +25,46 @@
                 left: 0;
                 z-index: -1;
             }
-        }
-
-        .shape {
-            position: absolute;
 
             // circle dot image
-
-            &:nth-child(1) {
-                top: 100px;
-                right: -30px;
-                z-index: 2;
+            .circleShape {
+                -webkit-mask-image: url("../../../public/images/sections/about-us/shapes/1.png");
+                mask-image: url("../../../public/images/sections/about-us/shapes/1.png");
+                height: 102px;
+                width: 102px;
+                background-color: map-get($secondary-color, normal);
+                position: absolute;
+                top: 98px;
+                right: -24px;
 
                 @media (max-width: 575px) {
-                    height: auto;
-                    width: 80px;
-                    top: 100px;
-                    right: 30px;
+                    right: 20px;
+                    top: 78px;
+                    height: calc(102px - 20px);
+                    width: calc(102px - 20px);
                 }
 
-                @media (max-width: 380px) {
-                    height: auto;
-                    width: 60px;
-                    right: 20px;
+                @media (max-width: 480px) {
+                    height: calc(102px - 30px);
+                    width: calc(102px - 30px);
                 }
             }
 
             // square dot image
-
-            &:nth-child(2) {
-                bottom: 60px;
-                left: -70px;
-                z-index: 2;
+            .squareShape {
+                -webkit-mask-image: url("../../../public/images/sections/about-us/shapes/2.png");
+                mask-image: url("../../../public/images/sections/about-us/shapes/2.png");
+                height: 73px;
+                width: 110px;
+                background-color: map-get($secondary-color, normal);
+                position: absolute;
+                bottom: 63px;
+                left: -66px;
 
                 @media (max-width: 575px) {
-                    height: auto;
-                    width: calc(110px - 20px);
-                    bottom: 30px;
-                    left: 0px;
+                    left: 10px;
+                    width: calc(110px - 30px);
                 }
-
-                @media (max-width: 380px) {
-                    height: auto;
-                    width: calc(110px - 40px);
-                    right: 20px;
-                }
-            }
-
-            // square bg shape
-
-            &:nth-child(3) {
-                top: 115px;
-                left: 0;
-
-                // @media (max-width: 575px) {
-                //     display: none;
-                // }
             }
         }
     }

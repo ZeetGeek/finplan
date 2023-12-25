@@ -64,20 +64,23 @@ export const Showcase = () => {
                         {/* Background shapes */}
                         <div className={`${style.ShapeWrapper}`}>
                             {/* Round Dots Circle */}
-                            <Image
+                            {/* <Image
                                 src={CircleDotsImage}
                                 height={136}
                                 width={136}
                                 alt="Round Dots Circle Shape"
-                            />
+                            /> */}
+
+                            <div className={`${style.CircleDotsImage} bg-mask`}></div>
 
                             {/* Square Dots Circle */}
-                            <Image
+                            {/* <Image
                                 src={SquareDotsImage}
                                 height={110}
                                 width={165}
                                 alt="Square Dots Circle Shape"
-                            />
+                            /> */}
+                            <div className={`${style.SquareDotsImage} bg-mask`}></div>
                         </div>
                     </Row>
                 </Container>

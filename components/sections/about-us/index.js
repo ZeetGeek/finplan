@@ -45,25 +45,13 @@ export const AboutUs = () => {
                                             alt="Background Shape"
                                         />
                                     </div>
-                                </div>
-                                {/* shapes */}
-                                <div className={`${style.shapes}`}>
+                                    {/* shapes */}
+
                                     {/* circle dots shape */}
-                                    <Image
-                                        src={CircleDotsShape}
-                                        height={102}
-                                        width={102}
-                                        alt="Circle Shape"
-                                        className={`${style.shape}`}
-                                    />
+                                    <div className={`${style.circleShape} bg-mask`}></div>
+
                                     {/* square dots shape */}
-                                    <Image
-                                        src={SquareDotsShape}
-                                        height={73}
-                                        width={110}
-                                        alt="Square Shape"
-                                        className={`${style.shape}`}
-                                    />
+                                    <div className={`${style.squareShape} bg-mask`}></div>
                                 </div>
                             </div>
                         </Col>
