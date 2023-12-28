@@ -37,9 +37,9 @@ export const Blog = () => {
                                 <Row className="justify-content-center align-items-center">
                                     {/* blog box */}
                                     {/* print dynamic data */}
-                                    {data.map((item) => {
+                                    {data.map((item, index) => {
                                         return (
-                                            <Col lg={4} md={6} key={item.id}>
+                                            <Col lg={4} md={6} key={index}>
                                                 <BlogCard
                                                     blog={{
                                                         ...item.blog,

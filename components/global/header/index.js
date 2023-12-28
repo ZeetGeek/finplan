@@ -25,8 +25,8 @@ export const Header = () => {
                         <Col lg={12}>
                             <div className="d-flex align-items-center justify-content-between">
                                 {/* logo */}
-                                <div className={`${style.logoWrapper}`}>
-                                    <Link href="/">
+                                <div className={`logoWrapper`}>
+                                    <Link href="/" title="Finplan Logo">
                                         <Image
                                             src={headerLogo}
                                             height={34}
@@ -37,7 +37,7 @@ export const Header = () => {
                                 </div>
 
                                 {/* join now button */}
-                                <div className={`${style.buttonWrapper}`}>
+                                <div className={`buttonWrapper`}>
                                     <button
                                         className="button-primary button-small text-very-large weight-medium"
                                         name="Join Now"

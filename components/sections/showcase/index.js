@@ -38,9 +38,9 @@ export const Showcase = () => {
                             <div className={`${style.StudiesWrapper} showcase-studio-wrapper-gl`}>
                                 <Row>
                                     {/* Print all studies data */}
-                                    {data.map((item) => {
+                                    {data.map((item, index) => {
                                         return (
-                                            <Col lg={3} sm={6} key={item.id}>
+                                            <Col lg={3} sm={6} key={index}>
                                                 <div
                                                     className={`${style.StudiesImagesWrapper} ${
                                                         item.id % 2 === 0 ? style.odd : style.even

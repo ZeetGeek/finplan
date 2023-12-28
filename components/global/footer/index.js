@@ -30,12 +30,14 @@ export const Footer = () => {
                             >
                                 {/* footer logo */}
                                 <div className={`${style.logoWrapper}`}>
-                                    <Image
-                                        src={FooterLogo}
-                                        height={35}
-                                        width={150}
-                                        alt="finplan logo"
-                                    />
+                                    <Link href="/" title="finplan logo">
+                                        <Image
+                                            src={FooterLogo}
+                                            height={35}
+                                            width={150}
+                                            alt="finplan logo"
+                                        />
+                                    </Link>
                                 </div>
 
                                 {/* footer description */}
@@ -49,10 +51,13 @@ export const Footer = () => {
                                 {/* footer social links */}
                                 <div className={`${style.socialLinksWrapper}`}>
                                     <ul className="d-flex align-items-center gap-3 mt-3 mt-lg-5 mt-md-4">
-                                        {socialMedia.map((item) => {
+                                        {socialMedia.map((item, index) => {
                                             return (
-                                                <li key={item.id}>
-                                                    <Link href={item.navigate} title={item.title}>
+                                                <li key={index}>
+                                                    <Link
+                                                        href={item.navigate}
+                                                        title={`Visit Are ${item.title}`}
+                                                    >
                                                         {item.icon}
                                                     </Link>
                                                 </li>
@@ -74,12 +79,12 @@ export const Footer = () => {
 
                                 {/* All Links */}
                                 <ul>
-                                    {MenuLinks.map((item) => {
+                                    {MenuLinks.map((item, index) => {
                                         return (
-                                            <li key={item.id} className="mb-2 mb-lg-4 mb-sm-3">
+                                            <li key={index} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
-                                                    title={item.text}
+                                                    title={`visit are ${item.text}`}
                                                     className="text-medium gray-normal"
                                                 >
                                                     {item.text}
@@ -102,12 +107,12 @@ export const Footer = () => {
 
                                 {/* All Links */}
                                 <ul>
-                                    {TermsLink.map((item) => {
+                                    {TermsLink.map((item, index) => {
                                         return (
-                                            <li key={item.id} className="mb-2 mb-lg-4 mb-sm-3">
+                                            <li key={index} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
-                                                    title={item.text}
+                                                    title={`Read Are ${item.text}`}
                                                     className="text-medium gray-normal"
                                                 >
                                                     {item.text}
@@ -129,12 +134,12 @@ export const Footer = () => {
 
                                 {/* All Links */}
                                 <ul>
-                                    {addressLinks.map((item) => {
+                                    {addressLinks.map((item, index) => {
                                         return (
-                                            <li key={item.id} className="mb-2 mb-lg-4 mb-sm-3">
+                                            <li key={index} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
-                                                    title={item.text}
+                                                    title={`visit are ${item.text}`}
                                                     target={item.target}
                                                     className="text-medium gray-normal"
                                                 >

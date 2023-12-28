@@ -16,7 +16,7 @@ import SquareBackgroundShape2 from "@/images/sections/our-team/shape/2.png";
 import style from "./team-member-card.module.scss";
 
 // Define the main functional component
-export const ComponentName = ({ member }) => {
+export const TeamMember = ({ member }) => {
     return (
         <>
             {/* Page content goes here */}
@@ -59,4 +59,4 @@ export const ComponentName = ({ member }) => {
 };
 
 // Export the component as default
-export default ComponentName;
+export default TeamMember;

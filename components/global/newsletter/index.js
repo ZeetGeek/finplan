@@ -49,7 +49,10 @@ export const Newsletter = () => {
                                                 placeholder="Enter Your Email"
                                             />
                                             {/* Button */}
-                                            <button className="button-primary button-large w-100 w-sm-auto">
+                                            <button
+                                                type="submit"
+                                                className="button-primary button-large w-100 w-sm-auto"
+                                            >
                                                 Sign Up
                                             </button>
                                         </div>

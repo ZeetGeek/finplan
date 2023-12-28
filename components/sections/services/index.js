@@ -57,11 +57,11 @@ export const Services = () => {
                                     {/* Services Left */}
                                     <Col sm={6}>
                                         <div className={`${style.LeftServices}`}>
-                                            {data.map((item) => {
+                                            {data.map((item, index) => {
                                                 return (
-                                                    item.id <= 1 && (
+                                                    index % 2 !== 0 && (
                                                         <ServicesCard
-                                                            key={item.id}
+                                                            key={index}
                                                             img={{
                                                                 ...item.img,
                                                                 height: 50,
@@ -78,11 +78,11 @@ export const Services = () => {
                                     {/* Services Right */}
                                     <Col sm={6}>
                                         <div className={`${style.RightServices}`}>
-                                            {data.map((item) => {
+                                            {data.map((item, index) => {
                                                 return (
-                                                    item.id >= 2 && (
+                                                    index % 2 == 0 && (
                                                         <ServicesCard
-                                                            key={item.id}
+                                                            key={index}
                                                             img={{
                                                                 ...item.img,
                                                                 height: 50,

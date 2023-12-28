@@ -37,9 +37,9 @@ export const OurTeam = () => {
                                 <Row className="row-gap-3">
                                     {/* Team member box */}
                                     {/* Team Member Dynamic Data */}
-                                    {data.map((item) => {
+                                    {data.map((item, index) => {
                                         return (
-                                            <Col xl={3} md={6} key={item.id}>
+                                            <Col xl={3} md={6} key={index}>
                                                 <TeamMemberCard
                                                     key={item.id}
                                                     member={{

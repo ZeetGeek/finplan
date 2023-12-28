@@ -55,12 +55,11 @@ export const Reviews = () => {
                                     }}
                                     modules={[Autoplay]}
                                 >
-                                    {data.map((item) => {
+                                    {data.map((item, index) => {
                                         return (
-                                            <SwiperSlide key={item.id}>
+                                            <SwiperSlide key={index}>
                                                 <div
-                                                    styleName={style.description_wrapper}
-                                                    className="text-center text-lg-start"
+                                                    className={`${style.description_wrapper} text-center text-lg-start`}
                                                 >
                                                     <p className="heading-h5 color-black weight-semibold">
                                                         &quot;{item.description}&quot;
@@ -78,17 +77,17 @@ export const Reviews = () => {
                                 </Swiper>
                             </div>
                         </Col>
-                        {/* circle background image */}
-                        <div className={`${style.backgroundShapeWrapper}`}>
-                            <Image
-                                src={backgroundShapeImage}
-                                height={610}
-                                width={610}
-                                alt="Background Circle Shape"
-                            />
-                        </div>
                     </Row>
                 </Container>
+                {/* circle background image */}
+                <div className={`${style.backgroundShapeWrapper}`}>
+                    <Image
+                        src={backgroundShapeImage}
+                        height={610}
+                        width={610}
+                        alt="Background Circle Shape"
+                    />
+                </div>
             </section>
         </>
     );

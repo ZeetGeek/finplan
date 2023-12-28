@@ -4,12 +4,14 @@
 // blog card
 
 .boxWrapper {
-    &:hover .imageWrapper img {
-        transform: rotate(3deg) scale(1.1);
-    }
+    &:hover {
+        .imageWrapper img {
+            transform: rotate(3deg) scale(1.1);
+        }
 
-    &:hover .titleWrapper h5 {
-        color: map-get($secondary-color, normal);
+        .titleWrapper h5 {
+            color: map-get($secondary-color, normal);
+        }
     }
 
     @media (max-width: 768px) {
@@ -25,6 +27,11 @@
             left: 13px;
             bottom: 13px;
             padding: 6px 10px;
+        }
+
+        img,
+        h5 {
+            transition: 0.3s;
         }
     }
 

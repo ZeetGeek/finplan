@@ -28,8 +28,8 @@
 
             // circle dot image
             .circleShape {
-                -webkit-mask-image: url("../../../public/images/sections/about-us/shapes/1.png");
-                mask-image: url("../../../public/images/sections/about-us/shapes/1.png");
+                -webkit-mask-image: url("/images/sections/about-us/shapes/1.png");
+                mask-image: url("/images/sections/about-us/shapes/1.png");
                 height: 102px;
                 width: 102px;
                 background-color: map-get($secondary-color, normal);
@@ -52,8 +52,8 @@
 
             // square dot image
             .squareShape {
-                -webkit-mask-image: url("../../../public/images/sections/about-us/shapes/2.png");
-                mask-image: url("../../../public/images/sections/about-us/shapes/2.png");
+                -webkit-mask-image: url("/images/sections/about-us/shapes/2.png");
+                mask-image: url("/images/sections/about-us/shapes/2.png");
                 height: 73px;
                 width: 110px;
                 background-color: map-get($secondary-color, normal);

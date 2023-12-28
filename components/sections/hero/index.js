@@ -28,7 +28,7 @@ export const Hero = () => {
                         <Col xl={7} lg={6}>
                             <div className={`${style.contentWrapper} text-center text-lg-start`}>
                                 {/* hero title */}
-                                <div className={`${style.title}`}>
+                                <div className={`heroTitle`}>
                                     <h1 className="heading-h1 black-color weight-medium">
                                         Trust your financial planning for you.
                                     </h1>
@@ -57,9 +57,9 @@ export const Hero = () => {
                                         className={`${style.avatarsWrapper} d-flex align-items-center flex-column flex-sm-row row-gap-4 row-gap-sm-0`}
                                     >
                                         <div className={`${style.avatarImages}`}>
-                                            {avatarsData.map((image) => (
+                                            {avatarsData.map((image, index) => (
                                                 <Image
-                                                    key={image.id}
+                                                    key={index}
                                                     src={image.src}
                                                     className={`${style.image} radius-circle`}
                                                     height={70}
@@ -113,11 +113,11 @@ export const Hero = () => {
                             <div className={`${style.sliderWrapper} radius-extra-large`}>
                                 <div className={`${style.sliderText}`}>
                                     {/* slider text */}
-                                    <span className="white-color text-very-large weight-semibold">
+                                    <h6 className="white-color text-very-large weight-semibold">
                                         We have worked with 120+ clients :
-                                    </span>
+                                    </h6>
                                 </div>
-                                <div className={`${style.clientImages}`}>
+                                <div className={`HeroClientImage`}>
                                     {/* client images */}
                                     <Swiper
                                         slidesPerView={1}
@@ -150,14 +150,16 @@ export const Hero = () => {
                                         modules={[Autoplay, Pagination, Navigation, FreeMode]}
                                         className="mySwiper"
                                     >
-                                        {clientData.map((image) => (
-                                            <SwiperSlide key={image.id}>
-                                                <Image
-                                                    src={image.src}
-                                                    height={image.height}
-                                                    width={image.width}
-                                                    alt={image.alt}
-                                                />
+                                        {clientData.map((image, index) => (
+                                            <SwiperSlide key={index}>
+                                                <div className={`${style.clientLogoWrapper}`}>
+                                                    <Image
+                                                        src={image.src}
+                                                        height={image.height}
+                                                        width={image.width}
+                                                        alt={image.alt}
+                                                    />
+                                                </div>
                                             </SwiperSlide>
                                         ))}
                                     </Swiper>

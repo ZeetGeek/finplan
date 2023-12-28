@@ -41,17 +41,17 @@ export const MenuLinks = [
         navigate: "/",
     },
     {
-        id: 0,
+        id: 1,
         text: "About",
         navigate: "/",
     },
     {
-        id: 0,
+        id: 2,
         text: "Services",
         navigate: "/",
     },
     {
-        id: 0,
+        id: 3,
         text: "Contact",
         navigate: "/",
     },
@@ -61,22 +61,22 @@ export const MenuLinks = [
 
 export const TermsLink = [
     {
-        id: 0,
+        id: 1,
         text: "Terms of use",
         navigate: "/",
     },
     {
-        id: 0,
+        id: 2,
         text: "Privacy policy",
         navigate: "/",
     },
     {
-        id: 0,
+        id: 3,
         text: "Cookie policy",
         navigate: "/",
     },
     {
-        id: 0,
+        id: 4,
         text: "Terms & conditions",
         navigate: "/",
     },

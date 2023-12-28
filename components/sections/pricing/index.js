@@ -50,8 +50,8 @@ export const Pricing = () => {
                             <div className={`${style.pricingBoxWrapper} pricing-box-wrapper-gl`}>
                                 <Row className="align-items-end justify-content-center">
                                     {/* Map over the data array and render PricingCard for each item */}
-                                    {data.map((item) => (
-                                        <Col lg={4} sm={6} key={item.id}>
+                                    {data.map((item, index) => (
+                                        <Col lg={4} sm={6} key={index}>
                                             <PricingCard
                                                 name={item.name}
                                                 price={item.price}

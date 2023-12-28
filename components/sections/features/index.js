@@ -37,9 +37,9 @@ export const Features = () => {
                                 <Row className="align-items-center justify-content-center">
                                     {/* Feature box */}
                                     {/* Print Features Dynamic Data */}
-                                    {data.map((item) => {
+                                    {data.map((item, index) => {
                                         return (
-                                            <Col lg={4} sm={6} key={item.id}>
+                                            <Col lg={4} sm={6} key={index}>
                                                 <FeatureCard
                                                     img={{
                                                         ...item.img,
