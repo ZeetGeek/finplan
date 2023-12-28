@@ -87,12 +87,14 @@ export const TermsLink = [
 export const addressLinks = [
     {
         id: 0,
+        title:"address",
         text: "Jl. Niti Mandala Renon No.88, Denpasar, Bali - 80239",
         navigate: "https://maps.app.goo.gl/qPn3biSe9EumXtg49",
         target: "_blank",
     },
     {
         id: 1,
+        title:"phone number",
         text: "(316) 212-3456",
         navigate: "tel:316-212-3456",
     },

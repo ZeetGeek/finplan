@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
 import TeamMemberCard from "@/components/global/cards/team-member";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 // import {} from "@/images/";
@@ -19,21 +20,23 @@ export const OurTeam = () => {
     return (
         <>
             {/* Page content goes here */}
-            <section className={`${style.ourTeam} our-team-global`} id="our-team">
+            <section className={` our-team-global`} id="our-team">
                 <Container>
-                    <Row className="row-gap-3" >
+                    <Row className="row-gap-3">
                         {/* Title and subtitle */}
                         <Col lg={6} className="mx-auto text-center">
-                            <div className={`${style.titleWrapper}`}>
+                            <div>
                                 <SubTitle text="our team" />
-                                <h2 className="heading-h2 black-color weight-medium">
-                                    Meet our team members.
-                                </h2>
+                                <Title
+                                    tag="h2"
+                                    text=" Meet our team members."
+                                    className="heading-h2 black-color weight-medium"
+                                />
                             </div>
                         </Col>
                         {/* All team members */}
                         <Col lg={12}>
-                            <div className={`${style.allTeamMembersWrapper}`}>
+                            <div>
                                 <Row className="row-gap-3">
                                     {/* Team member box */}
                                     {/* Team Member Dynamic Data */}

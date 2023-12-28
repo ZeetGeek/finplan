@@ -8,6 +8,7 @@ import Image from "next/image";
 import style from "./service-card.module.scss";
 
 // Define the main functional component
+import Title from "@/components/global/typography/title";
 export const ServicesCard = ({ img, title, description }) => {
     return (
         <>
@@ -29,9 +30,9 @@ export const ServicesCard = ({ img, title, description }) => {
                     </div>
                     {/* Service title and description*/}
                     <div className="ps-3">
-                        <div className={`${style.titleWrapper}`}>
-                            <h4 className="heading-h4 weight-semibold">{title}</h4>
-                            <div className={`${style.descriptionWrapper} mt-2`}>
+                        <div>
+                            <Title tag="h4" text={title} className="heading-h4 weight-semibold" />
+                            <div className={`mt-2`}>
                                 <p className="text-medium gray-light">{description}</p>
                             </div>
                         </div>

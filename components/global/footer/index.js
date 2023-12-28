@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 
 // Define reusable components
-// import {} from "@/components/";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 import FooterLogo from "@/images/logo/logo.png";
@@ -24,12 +24,12 @@ export const Footer = () => {
                 <Container>
                     <Row className="row-gap-4 row-gap-lg-0 text-center text-md-start">
                         {/* footer column 1 */}
-                        <Col lg={5} md={6} className={`${style.column1}`}>
+                        <Col lg={5} md={6}>
                             <div
                                 className={`${style.column1Wrapper} mx-auto m-md-0 d-flex justify-content-center flex-column align-items-center align-items-md-start`}
                             >
                                 {/* footer logo */}
-                                <div className={`${style.logoWrapper}`}>
+                                <div>
                                     <Link href="/" title="finplan logo">
                                         <Image
                                             src={FooterLogo}
@@ -41,7 +41,7 @@ export const Footer = () => {
                                 </div>
 
                                 {/* footer description */}
-                                <div className={`${style.descriptionWrapper} mt-3`}>
+                                <div className={`mt-3`}>
                                     <p className="text-medium gray-normal">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                                         elit tellus, luctus nec ullamcorper mattis, pulvinar.
@@ -49,7 +49,7 @@ export const Footer = () => {
                                 </div>
 
                                 {/* footer social links */}
-                                <div className={`${style.socialLinksWrapper}`}>
+                                <div>
                                     <ul className="d-flex align-items-center gap-3 mt-3 mt-lg-5 mt-md-4">
                                         {socialMedia.map((item, index) => {
                                             return (
@@ -70,12 +70,14 @@ export const Footer = () => {
 
                         {/* footer column 2 */}
 
-                        <Col lg={2} md={6} className={`${style.column2} ps-lg-4 ps-md-5`}>
+                        <Col lg={2} md={6} className={` ps-lg-4 ps-md-5`}>
                             <div className={`${style.column2Wrapper}`}>
                                 {/* Links Title */}
-                                <h5 className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold">
-                                    Menu
-                                </h5>
+                                <Title
+                                    tag="h5"
+                                    text="Menu"
+                                    className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold"
+                                />
 
                                 {/* All Links */}
                                 <ul>
@@ -84,7 +86,7 @@ export const Footer = () => {
                                             <li key={index} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
-                                                    title={`visit are ${item.text}`}
+                                                    title={`visit ${item.text} page`}
                                                     className="text-medium gray-normal"
                                                 >
                                                     {item.text}
@@ -98,12 +100,14 @@ export const Footer = () => {
 
                         {/* footer column 3 */}
 
-                        <Col lg={2} md={6} className={`${style.column3} ps-lg-4`}>
+                        <Col lg={2} md={6} className={` ps-lg-4`}>
                             <div className={`${style.column3Wrapper}`}>
                                 {/* Links Title */}
-                                <h5 className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold">
-                                    Links
-                                </h5>
+                                <Title
+                                    tag="h5"
+                                    text="Links"
+                                    className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold"
+                                />
 
                                 {/* All Links */}
                                 <ul>
@@ -125,12 +129,14 @@ export const Footer = () => {
                         </Col>
 
                         {/* footer column 4 */}
-                        <Col lg={3} md={6} className={`${style.column4} ps-lg-5 ps-md-5`}>
+                        <Col lg={3} md={6} className={` ps-lg-5 ps-md-5`}>
                             <div className={`${style.column4Wrapper}`}>
                                 {/* Links Title */}
-                                <h5 className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold">
-                                    Our Address
-                                </h5>
+                                <Title
+                                    tag="h5"
+                                    text="Our Address"
+                                    className=" mb-2 mb-lg-4 mb-md-3 heading-h5 black-color weight-semibold"
+                                />
 
                                 {/* All Links */}
                                 <ul>
@@ -139,7 +145,7 @@ export const Footer = () => {
                                             <li key={index} className="mb-2 mb-lg-4 mb-sm-3">
                                                 <Link
                                                     href={item.navigate}
-                                                    title={`visit are ${item.text}`}
+                                                    title={`get are ${item.title}`}
                                                     target={item.target}
                                                     className="text-medium gray-normal"
                                                 >

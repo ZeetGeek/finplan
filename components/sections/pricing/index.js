@@ -1,9 +1,11 @@
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
+import Link from "next/link";
 
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
 import PricingCard from "@/components/global/cards/pricing";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 // import {} from "@/images/";
@@ -24,11 +26,13 @@ export const Pricing = () => {
                     <Row className="align-items-xl-start align-items-center justify-content-center text-center text-xl-start">
                         <Col xl={3} lg={6} className="mb-4 mb-sm-5">
                             {/* Title and subtle */}
-                            <div className={`${style.titleWrapper}`}>
+                            <div>
                                 <SubTitle text="pricing" />
-                                <h2 className="heading-h2 black-color weight-medium">
-                                    Our pricing.
-                                </h2>
+                                <Title  
+                                    tag="h2"
+                                    text="Our pricing."
+                                    className="heading-h2 black-color weight-medium"
+                                />
                             </div>
                             {/* Description */}
                             <div className={`${style.descriptionWrapper}`}>
@@ -38,16 +42,20 @@ export const Pricing = () => {
                                 </p>
                             </div>
                             {/* Button */}
-                            <div className={`${style.buttonWrapper}`}>
-                                <button className="button-secondary button-medium" name="See FAQ">
+                            <div>
+                                <Link
+                                    href="/"
+                                    className="button-secondary button-medium"
+                                    title="See FAQ"
+                                >
                                     See FAQ
-                                </button>
+                                </Link>
                             </div>
                         </Col>
 
                         {/* Pricing Content */}
                         <Col xl={9}>
-                            <div className={`${style.pricingBoxWrapper} pricing-box-wrapper-gl`}>
+                            <div className={`pricing-box-wrapper-gl`}>
                                 <Row className="align-items-end justify-content-center">
                                     {/* Map over the data array and render PricingCard for each item */}
                                     {data.map((item, index) => (

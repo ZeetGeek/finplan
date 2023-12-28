@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 // Define reusable components
-// import {} from "@/components/";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 import ReviewImage from "@/images/sections/reviews/1.png";
@@ -43,9 +43,7 @@ export const Reviews = () => {
                         {/* All Reviews Slider */}
                         <Col lg={6} className="order-1 order-lg-2">
                             {/* Reviews slider */}
-                            <div
-                                className={`${style.sliderWrapper} ps-0 ps-lg-5 mt-4 mt-sm-5 mt-lg-0`}
-                            >
+                            <div className={` ps-0 ps-lg-5 mt-4 mt-sm-5 mt-lg-0`}>
                                 <Swiper
                                     loop={true}
                                     autoplay={{
@@ -58,15 +56,15 @@ export const Reviews = () => {
                                     {data.map((item, index) => {
                                         return (
                                             <SwiperSlide key={index}>
-                                                <div
-                                                    className={`${style.description_wrapper} text-center text-lg-start`}
-                                                >
+                                                <div className={`text-center text-lg-start`}>
                                                     <p className="heading-h5 color-black weight-semibold">
                                                         &quot;{item.description}&quot;
                                                     </p>
-                                                    <h5 className="text-large weight-semibold mt-4">
-                                                        {item.name}
-                                                    </h5>
+                                                    <Title
+                                                        tag="h5"
+                                                        text={item.name}
+                                                        className="text-large weight-semibold mt-4"
+                                                    />
                                                     <span className="text-medium color-gray mt-1 d-inline-block">
                                                         {item.profession}
                                                     </span>

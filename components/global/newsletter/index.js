@@ -2,7 +2,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 // Define reusable components
-// import {} from "@/components/";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 // import {} from "@/images/";
@@ -27,9 +27,11 @@ export const Newsletter = () => {
                         <Row className="align-items-center justify-content-center">
                             {/* Title */}
                             <Col lg={6}>
-                                <h2 className="white-color heading-h2 weight-medium">
-                                    Let&apos;s sign up for planning services.
-                                </h2>
+                                <Title
+                                    tag="h2"
+                                    text="Let's sign up for planning services."
+                                    className="white-color heading-h2 weight-medium"
+                                />
                             </Col>
                             {/* Newsletter sign up */}
                             <Col
@@ -44,7 +46,7 @@ export const Newsletter = () => {
                                             <input
                                                 type="email"
                                                 name="newsletter-email"
-                                                className={`${style.newsletterEmail} radius-small white-color input-gl`}
+                                                className={`radius-small white-color input-gl`}
                                                 id="newsletter-email"
                                                 placeholder="Enter Your Email"
                                             />

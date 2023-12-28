@@ -38,12 +38,11 @@ export const Header = () => {
 
                                 {/* join now button */}
                                 <div className={`buttonWrapper`}>
-                                    <button
+                                    <Link href="/" title="Join Now"
                                         className="button-primary button-small text-very-large weight-medium"
-                                        name="Join Now"
                                     >
                                         Join Now
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>

@@ -1,9 +1,11 @@
 // Import dependencies here
 import Image from "next/image";
+import Link from "next/link";
 
 // Include image assets if necessary
 import NewIcon from "@/images/sections/pricing/icons/1.png";
 import { Check, Xmark } from "iconoir-react";
+import Title from "@/components/global/typography/title";
 
 // Apply styles or link external stylesheets
 import style from "./pricing-card.module.scss";
@@ -20,13 +22,14 @@ export const PricingCard = ({ price, name, planType, details, buttonText, button
                         planType === "pro" ? "bg-light-blue-color-1" : "bg-primary-lighter"
                     } mb-2 radius-extra-large text-center`}
                 >
-                    <h1
+                    {/* <h2>{price}</h2> */}
+                    <Title
+                        tag="h2"
+                        text={price}
                         className={`heading-h2 weight-medium ${
                             planType === "pro" ? "secondary-normal" : "color-black"
                         } `}
-                    >
-                        {price}
-                    </h1>
+                    />
                     <span className="text-very-large weight-medium">{name}</span>
                 </div>
                 {/* Plan details */}
@@ -39,7 +42,7 @@ export const PricingCard = ({ price, name, planType, details, buttonText, button
                         <ul>
                             {details.map((detail, index) => (
                                 <li key={index} className="d-flex align-items-center">
-                                    <div className={`${style.icon}`}>
+                                    <div>
                                         <span>
                                             {detail.include ? (
                                                 <Check strokeWidth={4} />
@@ -48,20 +51,21 @@ export const PricingCard = ({ price, name, planType, details, buttonText, button
                                             )}
                                         </span>
                                     </div>
-                                    <span className={`${style.detailsText}`}>{detail.name}</span>
+                                    <span>{detail.name}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className={`${style.ButtonWrapper}`}>
-                        <button
-                            name={`${buttonName} button`}
+                    <div>
+                        <Link
+                            href="/"
+                            title={`${buttonName} button`}
                             className={`${
                                 planType === "pro" ? "button-secondary" : "button-primary"
-                            } button-large weight-medium`}
+                            } button-large weight-medium d-inline-block`}
                         >
                             {buttonText}
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 {planType === "pro" ? (

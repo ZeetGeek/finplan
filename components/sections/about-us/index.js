@@ -1,9 +1,11 @@
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 import MainImage from "@/images/sections/about-us/1.png";
@@ -62,11 +64,13 @@ export const AboutUs = () => {
                                 className={`${style.contentWrapper} text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start`}
                             >
                                 {/* Title and subtitle */}
-                                <div className={`${style.titleWrapper}`}>
+                                <div>
                                     <SubTitle text="about us" />
-                                    <h2 className="heading-h2 black-color weight-medium">
-                                        Experience & expertise in financial planning.
-                                    </h2>
+                                    <Title
+                                        tag="h2"
+                                        text="Experience & expertise in financial planning."
+                                        className="heading-h2 black-color weight-medium"
+                                    />
                                 </div>
                                 {/* Description*/}
                                 <div className={`${style.descriptionWrapper}`}>
@@ -78,18 +82,22 @@ export const AboutUs = () => {
                                     <div
                                         className={`${style.extraInfo} d-flex align-items-center justify-content-center justify-content-lg-between gap-3 gap-sm-5 gap-lg-0`}
                                     >
-                                        <div className={`${style.infoBox}`}>
-                                            <h2 className="heading-h2 black-color weight-medium">
-                                                78 %
-                                            </h2>
+                                        <div>
+                                            <Title
+                                                tag="h2"
+                                                text="78 %"
+                                                className="heading-h2 black-color weight-medium"
+                                            />
                                             <span className="text-medium gray-light">
                                                 Conversion rate.
                                             </span>
                                         </div>
-                                        <div className={`${style.infoBox}`}>
-                                            <h2 className="heading-h2 black-color weight-medium">
-                                                780 K
-                                            </h2>
+                                        <div>
+                                            <Title
+                                                tag="h2"
+                                                text="780 K"
+                                                className="heading-h2 black-color weight-medium"
+                                            />
                                             <span className="text-medium gray-light">
                                                 Total join members.
                                             </span>
@@ -97,13 +105,14 @@ export const AboutUs = () => {
                                     </div>
                                 </div>
                                 {/* button */}
-                                <div className={`${style.buttonWrapper}`}>
-                                    <button
+                                <div>
+                                    <Link
+                                        href="/"
                                         className="button-secondary button-medium"
-                                        name="More About"
+                                        title="More About"
                                     >
                                         More About
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>

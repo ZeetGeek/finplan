@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
 import FeatureCard from "@/components/global/cards/feature";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 // import {} from "@/images/";
@@ -26,14 +27,16 @@ export const Features = () => {
                         <Col lg={6} className="mx-auto text-center">
                             <div className={`${style.titleWrapper}`}>
                                 <SubTitle text="features" />
-                                <h2 className="heading-h2 black-color weight-medium">
-                                    Trusted advisors for financial success.
-                                </h2>
+                                <Title
+                                    tag="h2"
+                                    text=" Trusted advisors for financial success."
+                                    className="heading-h2 black-color weight-medium"
+                                />
                             </div>
                         </Col>
                         {/* All features */}
                         <Col lg={12}>
-                            <div className={`${style.allFeaturesWrapper} all_features_gl`}>
+                            <div className={`all_features_gl`}>
                                 <Row className="align-items-center justify-content-center">
                                     {/* Feature box */}
                                     {/* Print Features Dynamic Data */}

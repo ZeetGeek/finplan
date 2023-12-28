@@ -4,6 +4,7 @@ import Image from "next/image";
 
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 import CircleDotsImage from "@/images/sections/showcase/shapes/1.png";
@@ -25,11 +26,13 @@ export const Showcase = () => {
                     <Row>
                         {/* Show case title*/}
                         <Col lg={6} className="mx-auto">
-                            <div className={`${style.titleWrapper} text-center`}>
+                            <div className={`text-center`}>
                                 <SubTitle text="show case" />
-                                <h2 className="heading-h2 black-color weight-medium">
-                                    Expert financial planning Showcase studies.
-                                </h2>
+                                <Title
+                                    tag="h2"
+                                    text="Expert financial planning Showcase studies."
+                                    className="heading-h2 black-color weight-medium"
+                                />
                             </div>
                         </Col>
 
@@ -42,8 +45,8 @@ export const Showcase = () => {
                                         return (
                                             <Col lg={3} sm={6} key={index}>
                                                 <div
-                                                    className={`${style.StudiesImagesWrapper} ${
-                                                        item.id % 2 === 0 ? style.odd : style.even
+                                                    className={`${
+                                                        item.id % 2 === 0 && style.even
                                                     } radius-medium overflow-hidden`}
                                                 >
                                                     <Image

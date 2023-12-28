@@ -4,8 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
+import Link from "next/link";
 
 // Define reusable components
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 import heroImage from "@/images/sections/hero/1.png";
@@ -29,9 +31,11 @@ export const Hero = () => {
                             <div className={`${style.contentWrapper} text-center text-lg-start`}>
                                 {/* hero title */}
                                 <div className={`heroTitle`}>
-                                    <h1 className="heading-h1 black-color weight-medium">
-                                        Trust your financial planning for you.
-                                    </h1>
+                                    <Title
+                                        tag="h1"
+                                        text="Trust your financial planning for you."
+                                        className="heading-h1 black-color weight-medium"
+                                    />
                                 </div>
                                 {/* hero description */}
                                 <div className={`${style.description}`}>
@@ -45,13 +49,14 @@ export const Hero = () => {
                                 <div
                                     className={`${style.buttonsAvatars} d-flex align-items-center`}
                                 >
-                                    <div className={`${style.buttonWrapper}`}>
-                                        <button
+                                    <div>
+                                        <Link
+                                            href="/"
+                                            title="Let’s get started"
                                             className="button-secondary button-large white-color text-very-large weight-medium"
-                                            name="Let’s get started"
                                         >
                                             Let’s get started
-                                        </button>
+                                        </Link>
                                     </div>
                                     <div
                                         className={`${style.avatarsWrapper} d-flex align-items-center flex-column flex-sm-row row-gap-4 row-gap-sm-0`}
@@ -113,9 +118,11 @@ export const Hero = () => {
                             <div className={`${style.sliderWrapper} radius-extra-large`}>
                                 <div className={`${style.sliderText}`}>
                                     {/* slider text */}
-                                    <h6 className="white-color text-very-large weight-semibold">
-                                        We have worked with 120+ clients :
-                                    </h6>
+                                    <Title
+                                        tag="h6"
+                                        text="We have worked with 120+ clients :"
+                                        className="white-color text-very-large weight-semibold"
+                                    />
                                 </div>
                                 <div className={`HeroClientImage`}>
                                     {/* client images */}
@@ -152,7 +159,7 @@ export const Hero = () => {
                                     >
                                         {clientData.map((image, index) => (
                                             <SwiperSlide key={index}>
-                                                <div className={`${style.clientLogoWrapper}`}>
+                                                <div>
                                                     <Image
                                                         src={image.src}
                                                         height={image.height}

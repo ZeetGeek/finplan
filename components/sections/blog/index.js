@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
+import Title from "@/components/global/typography/title";
 import BlogCard from "@/components/global/cards/blog";
 
 // Include image assets if necessary
@@ -19,16 +20,18 @@ export const Blog = () => {
     return (
         <>
             {/* Page content goes here */}
-            <section className={`${style.blog} blog-gl`} id="blog">
+            <section className={`blog-gl`} id="blog">
                 <Container>
                     <Row>
                         {/* Title and subtitle */}
                         <Col lg={6} className="mx-auto text-center">
-                            <div className={`${style.titleWrapper}`}>
+                            <div>
                                 <SubTitle text="our blog" />
-                                <h2 className="heading-h2 black-color weight-medium">
-                                    Our news & blog.
-                                </h2>
+                                <Title
+                                    tag="h2"
+                                    text="Our news & blog."
+                                    className="heading-h2 black-color weight-medium"
+                                />
                             </div>
                         </Col>
                         {/* Blog content */}

@@ -5,6 +5,8 @@ import Image from "next/image";
 import style from "./feature-card.module.scss";
 
 // Define the main functional component
+import Title from "@/components/global/typography/title";
+
 export const FeatureCard = ({ img, title, description }) => {
     return (
         <>
@@ -16,10 +18,10 @@ export const FeatureCard = ({ img, title, description }) => {
                 </div>
                 {/* Feature title */}
                 <div className={`${style.titleWrapper}`}>
-                    <h5 className="heading-h5 weight-semibold">{title}</h5>
+                    <Title tag="h5" text={title} className="heading-h5 weight-semibold" />
                 </div>
                 {/* Feature description */}
-                <div className={`${style.descriptionWrapper}`}>
+                <div>
                     <p className="text-medium gray-light"> {description}</p>
                 </div>
             </div>

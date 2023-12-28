@@ -51,7 +51,7 @@
         @media (max-width: 480px) {
             margin-top: 20px;
         }
-
+        
         .even {
             margin-top: 60px;
 
@@ -79,7 +79,7 @@
             height: 136px;
             width: 136px;
             background-color: map-get($secondary-color, normal);
-            mask-image: url("../../../public/images/sections/showcase/shapes/1.png");
+            mask-image: url("/images/sections/showcase/shapes/1.png");
 
             @media (max-width: 991px) {
                 height: 100%;
@@ -104,7 +104,7 @@
             height: 110px;
             width: 165px;
             background-color: map-get($secondary-color, normal);
-            mask-image: url("../../../public/images/sections/showcase/shapes/2.png");
+            mask-image: url("/images/sections/showcase/shapes/2.png");
 
             @media (max-width: 991px) {
                 height: 110px;

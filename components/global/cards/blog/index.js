@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Title from "@/components/global/typography/title";
+
 // Apply styles or link external stylesheets
 import style from "./blog-card.module.scss";
 
@@ -32,12 +34,22 @@ export const BlogCard = ({ blog }) => {
                 {/* title */}
                 <div className={`${style.titleWrapper}`}>
                     <Link href="/">
-                        <h5 className="color-block heading-h5 weight-semibold">{blog.title}</h5>
+                        <Title
+                            tag="h5"
+                            text={blog.title}
+                            className="color-block heading-h5 weight-semibold"
+                        />
                     </Link>
                 </div>
                 {/* button */}
-                <div className={`${style.buttonWrapper}`}>
-                    <button className="button-primary button-medium">Read More</button>
+                <div>
+                    <Link
+                        href="/"
+                        title={`Read more about ${blog.title}`}
+                        className="button-primary button-medium d-inline-block"
+                    >
+                        Read More
+                    </Link>
                 </div>
             </div>
         </>

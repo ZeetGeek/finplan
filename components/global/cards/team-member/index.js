@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 // Define reusable components
-// import {} from "@/components/";
+import Title from "@/components/global/typography/title";
 
 // Include image assets if necessary
 import SquareBackgroundShape1 from "@/images/sections/our-team/shape/1.png";
@@ -22,7 +22,7 @@ export const TeamMember = ({ member }) => {
             {/* Page content goes here */}
             <div
                 className={`${style.boxWrapper} ${
-                    member.id % 2 === 0 ? style.odd : style.even
+                    member.id % 2 === 0 && style.even
                 } text-center text-xl-start`}
             >
                 {/* member image */}
@@ -45,12 +45,16 @@ export const TeamMember = ({ member }) => {
                 </div>
 
                 {/* member name */}
-                <div className={`${style.nameWrapper} mt-3`}>
-                    <h5 className="color-black heading-h4 weight-semibold">{member.name}</h5>
+                <div className={`mt-3`}>
+                    <Title
+                        tag="h5"
+                        text={member.name}
+                        className="color-black heading-h4 weight-semibold"
+                    />
                 </div>
 
                 {/* member position */}
-                <div className={`${style.positionWrapper}`}>
+                <div>
                     <span className="text-medium color-gray">{member.position}</span>
                 </div>
             </div>

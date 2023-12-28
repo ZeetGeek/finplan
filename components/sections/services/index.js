@@ -1,8 +1,10 @@
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
+import Link from "next/link";
 
 // Define reusable components
 import { SubTitle } from "@/components/global/typography/sub-title";
+import Title from "@/components/global/typography/title";
 import ServicesCard from "@/components/global/cards/services";
 
 // Fetch or import data required for the page
@@ -23,11 +25,13 @@ export const Services = () => {
                         <Col lg={4}>
                             <div className="text-center text-lg-start">
                                 {/* Title and subtle */}
-                                <div className={`${style.titleWrapper}`}>
+                                <div>
                                     <SubTitle text="services" />
-                                    <h2 className="heading-h2 black-color weight-medium">
-                                        Our services for financial future.
-                                    </h2>
+                                    <Title
+                                        tag="h2"
+                                        text="Our services for financial future."
+                                        className="heading-h2 black-color weight-medium"
+                                    />
                                 </div>
                                 {/* Description */}
                                 <div className={`${style.descriptionWrapper}`}>
@@ -37,13 +41,14 @@ export const Services = () => {
                                     </p>
                                 </div>
                                 {/* Button */}
-                                <div className={`${style.buttonWrapper}`}>
-                                    <button
-                                        className="button-secondary button-medium d-none d-lg-block"
-                                        name="More Service"
+                                <div>
+                                    <Link
+                                        href="/"
+                                        title="More Service"
+                                        className="button-secondary button-medium d-none d-lg-inline-block"
                                     >
                                         More Service
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>
@@ -98,15 +103,14 @@ export const Services = () => {
                                     </Col>
                                 </Row>
                                 {/* Button */}
-                                <div
-                                    className={`${style.buttonWrapper} text-center mt-sm-5 mt-4 d-block d-lg-none`}
-                                >
-                                    <button
+                                <div className={`text-center mt-sm-5 mt-4 d-block d-lg-none`}>
+                                    <Link
+                                        href="/"
+                                        title="More Service"
                                         className="button-secondary button-medium"
-                                        name="More Service"
                                     >
                                         More Service
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>
