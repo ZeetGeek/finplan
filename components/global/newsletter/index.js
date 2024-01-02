@@ -1,3 +1,5 @@
+"use client";
+
 // Import dependencies here
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -53,6 +55,7 @@ export const Newsletter = () => {
                                             {/* Button */}
                                             <button
                                                 type="submit"
+                                                onClick={(e) => e.preventDefault()}
                                                 className="button-primary button-large w-100 w-sm-auto"
                                             >
                                                 Sign Up
