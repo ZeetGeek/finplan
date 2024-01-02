@@ -141,10 +141,11 @@
         padding: 60px 50px;
         margin: -45px 0px 0px 0px;
         z-index: 1;
-        background-image: url("../../../public/images/sections//hero/shapes/rectangle.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
+        mask-image: url("../../../public/images/sections//hero/shapes/rectangle.png");
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        background: map-get($secondary-color, normal);
 
         @media (max-width: 1200px) {
             background-size: 100% 101%;

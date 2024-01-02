@@ -25,14 +25,12 @@ export const Blog = () => {
                     <Row>
                         {/* Title and subtitle */}
                         <Col lg={6} className="mx-auto text-center">
-                            <div>
-                                <SubTitle text="our blog" />
-                                <Title
-                                    tag="h2"
-                                    text="Our news & blog."
-                                    className="heading-h2 black-color weight-medium"
-                                />
-                            </div>
+                            <SubTitle text="our blog" />
+                            <Title
+                                tag="h2"
+                                text="Our news & blog."
+                                className="heading-h2 black-color weight-medium"
+                            />
                         </Col>
                         {/* Blog content */}
                         <Col lg={12}>

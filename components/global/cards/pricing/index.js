@@ -42,7 +42,7 @@ export const PricingCard = ({ price, name, planType, details, buttonText, button
                         <ul>
                             {details.map((detail, index) => (
                                 <li key={index} className="d-flex align-items-center">
-                                    <div>
+                                    <div className="text-center">
                                         <span>
                                             {detail.include ? (
                                                 <Check strokeWidth={4} />
@@ -56,7 +56,7 @@ export const PricingCard = ({ price, name, planType, details, buttonText, button
                             ))}
                         </ul>
                     </div>
-                    <div>
+                  
                         <Link
                             href="/"
                             title={`${buttonName} button`}
@@ -66,7 +66,7 @@ export const PricingCard = ({ price, name, planType, details, buttonText, button
                         >
                             {buttonText}
                         </Link>
-                    </div>
+               
                 </div>
                 {planType === "pro" ? (
                     <>

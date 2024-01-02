@@ -42,7 +42,7 @@ export const BlogCard = ({ blog }) => {
                     </Link>
                 </div>
                 {/* button */}
-                <div>
+                <div className="text-start">
                     <Link
                         href="/"
                         title={`Read more about ${blog.title}`}

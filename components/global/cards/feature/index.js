@@ -21,9 +21,8 @@ export const FeatureCard = ({ img, title, description }) => {
                     <Title tag="h5" text={title} className="heading-h5 weight-semibold" />
                 </div>
                 {/* Feature description */}
-                <div>
-                    <p className="text-medium gray-light"> {description}</p>
-                </div>
+
+                <p className="text-medium gray-light"> {description}</p>
             </div>
         </>
     );

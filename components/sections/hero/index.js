@@ -49,15 +49,13 @@ export const Hero = () => {
                                 <div
                                     className={`${style.buttonsAvatars} d-flex align-items-center`}
                                 >
-                                    <div>
-                                        <Link
-                                            href="/"
-                                            title="Let’s get started"
-                                            className="button-secondary button-large white-color text-very-large weight-medium"
-                                        >
-                                            Let’s get started
-                                        </Link>
-                                    </div>
+                                    <Link
+                                        href="/"
+                                        title="Let’s get started"
+                                        className="button-secondary button-large white-color text-very-large weight-medium"
+                                    >
+                                        Let’s get started
+                                    </Link>
                                     <div
                                         className={`${style.avatarsWrapper} d-flex align-items-center flex-column flex-sm-row row-gap-4 row-gap-sm-0`}
                                     >
@@ -159,7 +157,7 @@ export const Hero = () => {
                                     >
                                         {clientData.map((image, index) => (
                                             <SwiperSlide key={index}>
-                                                <div>
+                                                <div className="text-center">
                                                     <Image
                                                         src={image.src}
                                                         height={image.height}

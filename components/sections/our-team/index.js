@@ -25,35 +25,31 @@ export const OurTeam = () => {
                     <Row className="row-gap-3">
                         {/* Title and subtitle */}
                         <Col lg={6} className="mx-auto text-center">
-                            <div>
-                                <SubTitle text="our team" />
-                                <Title
-                                    tag="h2"
-                                    text=" Meet our team members."
-                                    className="heading-h2 black-color weight-medium"
-                                />
-                            </div>
+                            <SubTitle text="our team" />
+                            <Title
+                                tag="h2"
+                                text=" Meet our team members."
+                                className="heading-h2 black-color weight-medium"
+                            />
                         </Col>
                         {/* All team members */}
                         <Col lg={12}>
-                            <div>
-                                <Row className="row-gap-3">
-                                    {/* Team member box */}
-                                    {/* Team Member Dynamic Data */}
-                                    {data.map((item, index) => {
-                                        return (
-                                            <Col xl={3} md={6} key={index}>
-                                                <TeamMemberCard
-                                                    key={item.id}
-                                                    member={{
-                                                        ...item,
-                                                    }}
-                                                />
-                                            </Col>
-                                        );
-                                    })}
-                                </Row>
-                            </div>
+                            <Row className="row-gap-3">
+                                {/* Team member box */}
+                                {/* Team Member Dynamic Data */}
+                                {data.map((item, index) => {
+                                    return (
+                                        <Col xl={3} md={6} key={index}>
+                                            <TeamMemberCard
+                                                key={item.id}
+                                                member={{
+                                                    ...item,
+                                                }}
+                                            />
+                                        </Col>
+                                    );
+                                })}
+                            </Row>
                         </Col>
                     </Row>
                 </Container>

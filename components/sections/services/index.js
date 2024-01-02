@@ -25,14 +25,13 @@ export const Services = () => {
                         <Col lg={4}>
                             <div className="text-center text-lg-start">
                                 {/* Title and subtle */}
-                                <div>
-                                    <SubTitle text="services" />
-                                    <Title
-                                        tag="h2"
-                                        text="Our services for financial future."
-                                        className="heading-h2 black-color weight-medium"
-                                    />
-                                </div>
+
+                                <SubTitle text="services" />
+                                <Title
+                                    tag="h2"
+                                    text="Our services for financial future."
+                                    className="heading-h2 black-color weight-medium"
+                                />
                                 {/* Description */}
                                 <div className={`${style.descriptionWrapper}`}>
                                     <p className="text-medium gray-light">
@@ -41,7 +40,7 @@ export const Services = () => {
                                     </p>
                                 </div>
                                 {/* Button */}
-                                <div>
+                             
                                     <Link
                                         href="/"
                                         title="More Service"
@@ -49,7 +48,6 @@ export const Services = () => {
                                     >
                                         More Service
                                     </Link>
-                                </div>
                             </div>
                         </Col>
                         {/* Services Content */}

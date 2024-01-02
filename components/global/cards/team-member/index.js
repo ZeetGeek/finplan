@@ -54,9 +54,8 @@ export const TeamMember = ({ member }) => {
                 </div>
 
                 {/* member position */}
-                <div>
-                    <span className="text-medium color-gray">{member.position}</span>
-                </div>
+
+                <span className="text-medium color-gray">{member.position}</span>
             </div>
         </>
     );

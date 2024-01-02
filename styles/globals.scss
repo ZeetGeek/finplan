@@ -39,6 +39,15 @@ img {
     height: auto;
 }
 
+.image-auto {
+    img {
+        height: auto;
+        width: auto;
+        // height: unset;
+        // width: unset;
+    }
+}
+
 a {
     /* Remove default link styling and set color to info status color */
     text-decoration: none;
@@ -316,6 +325,9 @@ p {
         padding: 10px 20px;
         border: none;
         cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         border-radius: map-get($border-radius, small);
         transition: background-color map-get($transition, fast),
             box-shadow map-get($transition, fast) ease;

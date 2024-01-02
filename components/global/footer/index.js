@@ -29,7 +29,7 @@ export const Footer = () => {
                                 className={`${style.column1Wrapper} mx-auto m-md-0 d-flex justify-content-center flex-column align-items-center align-items-md-start`}
                             >
                                 {/* footer logo */}
-                                <div>
+                                <div className="text-center">
                                     <Link href="/" title="finplan logo">
                                         <Image
                                             src={FooterLogo}
@@ -49,7 +49,7 @@ export const Footer = () => {
                                 </div>
 
                                 {/* footer social links */}
-                                <div>
+                             
                                     <ul className="d-flex align-items-center gap-3 mt-3 mt-lg-5 mt-md-4">
                                         {socialMedia.map((item, index) => {
                                             return (
@@ -64,7 +64,7 @@ export const Footer = () => {
                                             );
                                         })}
                                     </ul>
-                                </div>
+                         
                             </div>
                         </Col>
 

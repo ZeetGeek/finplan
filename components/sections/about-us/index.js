@@ -31,7 +31,7 @@ export const AboutUs = () => {
                         >
                             <div className={`${style.imageWrapper}`}>
                                 {/* Main image */}
-                                <div className={`${style.mainImage} `}>
+                                <div className={`${style.mainImage} image-auto`}>
                                     <Image
                                         src={MainImage}
                                         height={517}
@@ -64,14 +64,12 @@ export const AboutUs = () => {
                                 className={`${style.contentWrapper} text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start`}
                             >
                                 {/* Title and subtitle */}
-                                <div>
-                                    <SubTitle text="about us" />
-                                    <Title
-                                        tag="h2"
-                                        text="Experience & expertise in financial planning."
-                                        className="heading-h2 black-color weight-medium"
-                                    />
-                                </div>
+                                <SubTitle text="about us" />
+                                <Title
+                                    tag="h2"
+                                    text="Experience & expertise in financial planning."
+                                    className="heading-h2 black-color weight-medium"
+                                />
                                 {/* Description*/}
                                 <div className={`${style.descriptionWrapper}`}>
                                     <p className="text-medium gray-light">
@@ -82,7 +80,7 @@ export const AboutUs = () => {
                                     <div
                                         className={`${style.extraInfo} d-flex align-items-center justify-content-center justify-content-lg-between gap-3 gap-sm-5 gap-lg-0`}
                                     >
-                                        <div>
+                                        <div className="d-flex flex-column align-items-start">
                                             <Title
                                                 tag="h2"
                                                 text="78 %"
@@ -92,7 +90,7 @@ export const AboutUs = () => {
                                                 Conversion rate.
                                             </span>
                                         </div>
-                                        <div>
+                                        <div className="d-flex flex-column align-items-start">
                                             <Title
                                                 tag="h2"
                                                 text="780 K"
@@ -105,15 +103,14 @@ export const AboutUs = () => {
                                     </div>
                                 </div>
                                 {/* button */}
-                                <div>
-                                    <Link
-                                        href="/"
-                                        className="button-secondary button-medium"
-                                        title="More About"
-                                    >
-                                        More About
-                                    </Link>
-                                </div>
+
+                                <Link
+                                    href="/"
+                                    className="button-secondary button-medium"
+                                    title="More About"
+                                >
+                                    More About
+                                </Link>
                             </div>
                         </Col>
                     </Row>

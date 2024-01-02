@@ -26,14 +26,13 @@ export const Pricing = () => {
                     <Row className="align-items-xl-start align-items-center justify-content-center text-center text-xl-start">
                         <Col xl={3} lg={6} className="mb-4 mb-sm-5">
                             {/* Title and subtle */}
-                            <div>
-                                <SubTitle text="pricing" />
-                                <Title  
-                                    tag="h2"
-                                    text="Our pricing."
-                                    className="heading-h2 black-color weight-medium"
-                                />
-                            </div>
+
+                            <SubTitle text="pricing" />
+                            <Title
+                                tag="h2"
+                                text="Our pricing."
+                                className="heading-h2 black-color weight-medium"
+                            />
                             {/* Description */}
                             <div className={`${style.descriptionWrapper}`}>
                                 <p className="text-medium gray-light">
@@ -42,7 +41,6 @@ export const Pricing = () => {
                                 </p>
                             </div>
                             {/* Button */}
-                            <div>
                                 <Link
                                     href="/"
                                     className="button-secondary button-medium"
@@ -50,7 +48,6 @@ export const Pricing = () => {
                                 >
                                     See FAQ
                                 </Link>
-                            </div>
                         </Col>
 
                         {/* Pricing Content */}

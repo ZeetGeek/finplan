@@ -26,7 +26,7 @@ export const Header = () => {
                             <div className="d-flex align-items-center justify-content-between">
                                 {/* logo */}
                                 <div className={`logoWrapper`}>
-                                    <Link href="/" title="Finplan Logo">
+                                    <Link href="/" title="Finplan Logo" className="d-inline-block">
                                         <Image
                                             src={headerLogo}
                                             height={34}
@@ -38,7 +38,9 @@ export const Header = () => {
 
                                 {/* join now button */}
                                 <div className={`buttonWrapper`}>
-                                    <Link href="/" title="Join Now"
+                                    <Link
+                                        href="/"
+                                        title="Join Now"
                                         className="button-primary button-small text-very-large weight-medium"
                                     >
                                         Join Now

@@ -30,7 +30,7 @@ export const ServicesCard = ({ img, title, description }) => {
                     </div>
                     {/* Service title and description*/}
                     <div className="ps-3">
-                        <div>
+                        <div className="text-center text-sm-start ">
                             <Title tag="h4" text={title} className="heading-h4 weight-semibold" />
                             <div className={`mt-2`}>
                                 <p className="text-medium gray-light">{description}</p>
